@@ -1,0 +1,425 @@
+<apex:page standardController="Lead" extensions="IndiaMartUIController" standardStylesheets="false" 
+           showHeader="false" sidebar="false" applyBodyTag="false">
+<apex:outputPanel id="datatable">    
+    <html>
+    <head>
+    <link href="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/Bootstrap/bootstrap.min.css')}" rel="stylesheet" id="bootstrap-css" />
+    <link href="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/Bootstrap/dataTables.bootstrap.min.css')}" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/CSS/pikaday.css')}" />
+    <link rel="stylesheet" href="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/CSS/pikaday-skeleton.css')}" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> 
+    <script src="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/JS/jquery-3.3.1.js')}"></script>
+    <script src="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/JS/jquery.dataTables.min.js')}"></script>
+    <script src="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/JS/dataTables.bootstrap.min.js')}"></script>
+<style>
+            .button.button-small {
+                height: 30px;
+                line-height: 30px;
+                padding: 0px 10px;
+                }
+        
+            td input[type=text], td select {
+             
+              margin: 0;
+              padding: 2px 8px;
+            }
+        
+            th:last-child {
+              text-align: right;
+            }
+        
+            td:last-child {
+                text-align: right;
+            }
+        
+            td:last-child .button {
+               
+                text-align: center;
+                padding: 0px;
+                margin-bottom: 0px;
+                margin-right: 5px;
+                background-color: #FFF;
+            }
+        
+            td:last-child .button .fa {
+                line-height: 30px;
+                width: 30px;
+            }
+       </style> 
+    </head>
+    <body>
+          <apex:actionStatus id="actStatusId"> <apex:facet name="start"> <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.25; z-index: 1000; background-color: black;"> &nbsp; </div> <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%"> <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;"> <img src="/img/loading.gif" style="float: left; margin: 8px;" /> <span style="display: inline-block; padding: 10px 0px;">Please Wait..</span> </div> </div> </apex:facet> </apex:actionStatus>
+            <apex:outputPanel id="errorMsg">
+          <Strong style="color: red"><apex:messages /></Strong>
+</apex:outputPanel>
+         
+   <table id="example" class="table table-striped table-bordered nowrap" style="width:100%">
+            <thead>
+           <tr>           
+                <th style="display:none;">Id</th>
+                <th>Edit</th>    
+                <!--<th>LEAD SOURCE</th>-->
+                <th>Indiamart Lead Source</th>
+                <th>STATUS</th>
+                <th>Hot Lead</th>
+                <th>Type of lead</th>
+                <th>Name</th>
+                <th>COMPANY</th>
+                <th>MOBILE NUMBER</th>
+                <th>EMAIL</th>
+                <th>ENQ_MESSAGE</th>
+                <th>WHICH SAMPLE SENT?</th>
+                <th>PRODUCT REQUESTED</th>
+                <th>PRODUCT QUANTITY</th>
+                <th>Unit</th>
+                <th>TELL US ABOUT YOUR APPLICATION IN ONE LI</th>
+                <th>WHAT THE COMPANY DOES</th>
+                <th>INDUSTRY</th>
+                <th>WHAT IS THE PURPOSE/USE</th>
+                <th>ROLE IN ORGANISATION</th>
+                <th>NUMBER OF EMPLOYEES</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>State/Province</th>
+                <th>ZIP/POSTAL CODE</th>
+                <th>CC REMARKS 1</th>
+                <th>CC REMARKS 2</th>
+                <th>CC REMARKS 3</th>
+                <th>DATE OF ENQUIRY</th>
+                <th>TIME OF ENQUIRY</th>
+                <th>ENQ_CALL_DURATION</th>
+                <th style="display:none;"></th>  
+                       
+              </tr>
+        </thead>
+           <tbody>
+             <apex:repeat value="{!leadList}" var="leadinstance">
+                    <tr data-id="{!leadinstance.id}">
+                      <td data-field="name" style="display:none;">0</td>
+                      <td>
+                        <a class="button button-small edit" title="Edit">
+                          <i class="fa fa-pencil"></i>
+                        </a>
+                      </td>
+                       <!--<td>{!leadinstance.LeadSource}</td>-->
+                      <td>{!leadinstance.Indiamart_QTYPE__c}</td>
+                      <td>{!leadinstance.CC_Status__c}</td>
+                      <td data-field="Hot_Lead__c">{!leadinstance.Hot_Lead__c}</td>
+                      <td data-field="IM_Status__c">{!leadinstance.IM_Status__c}</td>
+                      <td data-field="name">{!leadinstance.lastName}</td>
+                      <td data-field="name">{!leadinstance.company}</td>
+                      <td data-field="name">{!leadinstance.MOBILEPHONE}</td>
+                      <td data-field="name">{!leadinstance.email}</td>
+                      <td ><textarea class="form-control rounded-0" rows="1" readonly="true">{!leadinstance.ENQ_MESSAGE__c}</textarea></td>
+                      <td data-field="Which_Product_Sent__c">{!IF((leadinstance.Which_Product_Sent__c==null),'',leadinstance.Which_Product_Sent__c)}</td>
+                      <td data-field="Name">{!leadinstance.Product_Name__c}</td>  
+                      <td data-field="Name">{!leadinstance.Product_Quantity__c}</td>
+                      <td data-field="Name">{!leadinstance.Unit__c}</td>
+                      <td data-field="Name">{!leadinstance.Tell_us_about_your_application_in_one_li__c}</td>
+                      <td data-field="Name">{!leadinstance.What_the_company_does__c}</td>
+                      <td data-field="Industry">{!leadinstance.Industry}</td>
+                      <td data-field="What_is_the_purpose_use__c">{!leadinstance.What_is_the_purpose_use__c}</td>
+                      <td data-field="Role_in_organisation__c">{!leadinstance.Role_in_organisation__c}</td> 
+                      <td data-field="Number_of_Employees_Custom__c">{!leadinstance.Number_of_Employees_Custom__c}</td>
+                      <td data-field="name">{!leadinstance.Street}</td>
+                      <td data-field="name">{!leadinstance.City}</td>
+                      <td data-field="name">{!leadinstance.State}</td>
+                      <td data-field="name">{!leadinstance.postalcode}</td> 
+                      <td data-field="name">{!leadinstance.CC_Remarks_1__c}</td>
+                      <td data-field="name">{!leadinstance.CC_Remarks_2__c}</td> 
+                      <td data-field="name">{!leadinstance.CC_Remarks_3__c}</td> 
+                      <td>{!leadinstance.Date_Of_Enquiry__c}</td>
+                      <td>{!leadinstance.Time_Of_Enquiry__c}</td>
+                      <td>{!leadinstance.ENQ_CALL_DURATION__c}</td>
+                      <td data-field="id" style="display:none;">{!leadinstance.id}</td>
+                      
+                 </tr>
+              </apex:repeat>
+          </tbody>
+                         
+        </table>
+                       
+     <script src="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/JS/moment.min.js')}"></script>
+     <script src="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/JS/pikaday.js')}"></script>
+     <script src="{!URLFOR($Resource.IndiaMartUIFiles_dontDelete,'IndiamartUIFiles/JS/table-edits.min.js')}"></script> 
+       
+<script>
+(function($, window, document, undefined) {
+     
+  var pluginName = "editable",
+    defaults = {
+      keyboard: true,
+      dblclick: true,
+      button: true,
+      buttonSelector: ".edit",
+      maintainWidth: true,
+      dropdowns: {},
+      edit: function() {},
+      save: function() {},
+      cancel: function() {}
+    };
+
+  function editable(element, options) {
+    this.element = element;
+    this.options = $.extend({}, defaults, options);
+
+    this._defaults = defaults;
+    this._name = pluginName;
+
+    this.init();
+  }
+
+  editable.prototype = {
+    init: function() {
+      this.editing = false;
+
+      if (this.options.dblclick) {
+        $(this.element)
+          .css('cursor', 'pointer')
+          .bind('dblclick', this.toggle.bind(this));
+       }
+      if (this.options.button) {
+        $(this.options.buttonSelector, this.element)
+          .bind('click', this.toggle.bind(this));
+      }
+    },
+
+    toggle: function(e) {
+      e.preventDefault();
+
+      this.editing = !this.editing;
+
+      if (this.editing) {
+        this.edit();
+      } else {
+        this.save();
+      }
+    },
+
+    edit: function() {
+      var instance = this,
+        values = {};
+
+      $('td[data-field]', this.element).each(function() {
+        var input,
+          field = $(this).data('field'),
+          value = $(this).text(),
+          width = $(this).width();
+
+        values[field] = value;
+
+        $(this).empty();
+
+        if (instance.options.maintainWidth) {
+          $(this).width(width);
+        }
+
+        if (field in instance.options.dropdowns) {
+          input = $('<select></select>');
+
+          for (var i = 0; i < instance.options.dropdowns[field].length; i++) {
+            $('<option></option>')
+              .text(instance.options.dropdowns[field][i])
+              .appendTo(input);
+          };
+
+          input.val(value)
+            .data('old-value', value)
+            .dblclick(instance._captureEvent);
+        } else {
+          input = $('<input type="text" />')
+            .val(value)
+            .data('old-value', value)
+            .dblclick(instance._captureEvent);
+        }
+
+        input.appendTo(this);
+
+        if (instance.options.keyboard) {
+          input.keydown(instance._captureKey.bind(instance));
+        }
+      });
+
+      this.options.edit.bind(this.element)(values);
+ },
+
+    save: function() {
+      var instance = this,
+        values = {};
+      var record='';
+      $('td[data-field]', this.element).each(function() {
+        var value = $(':input', this).val();
+        if(value)
+        value = value.replace(/,/g, '^');
+          
+        values[$(this).data('field')] = value;
+        record = record+","+value;
+        $(this).empty()
+          .text(value);
+      });
+      
+      updateLead(record);
+     
+    this.options.save.bind(this.element)(values);
+     
+    },
+
+    cancel: function() {
+      var instance = this,
+        values = {};
+
+      $('td[data-field]', this.element).each(function() {
+        var value = $(':input', this).data('old-value');
+
+        values[$(this).data('field')] = value;
+
+        $(this).empty()
+          .text(value);
+      });
+
+      this.options.cancel.bind(this.element)(values);
+    },
+
+    _captureEvent: function(e) {
+      e.stopPropagation();
+    },
+
+    _captureKey: function(e) {
+      if (e.which === 13) {
+        this.editing = false;
+        this.save();
+      } else if (e.which === 27) {
+        this.editing = false;
+        this.cancel();
+      }
+    }
+  };
+
+  $.fn[pluginName] = function(options) {
+    return this.each(function() {
+      if (!$.data(this, "plugin_" + pluginName)) {
+        $.data(this, "plugin_" + pluginName,
+          new editable(this, options));
+      }
+    });
+  };
+
+})(jQuery, window, document);
+
+editTable();
+
+//custome editable starts
+function editTable(){
+  
+  $(function() {
+  var pickers = {};
+
+  $('table tr').editable({
+    dropdowns: {     
+        
+      CC_Sample_Required__c:['','LOCTITE Threadlocker 243','LOCTITE Thread Sealants 542','LOCTITE Retaining Compound 638'],
+     IM_Status__c : ['More information on products','Intent to buy','Sample Requested','Not Interested','Not able to contact','None'],
+     Which_Product_Sent__c:['','LOCTITE Threadlocker 243','LOCTITE Thread Sealants 542','LOCTITE Retaining Compound 638'],
+      Industry:['','2-wheeler repair','4-wheeler repair','Agricultural Vehicles and Equipment','AGRICULTURE AND ALLIED INDUSTRIES','AUTO COMPONENTS','AUTOMOBILE','AVIATION','BANKING','Battery & Accumulators','Bearings, Gears & Gearboxes','Bicycle & Bicycle parts manufacturing','Cable & Cable Components', 'Cement','Ceramic & Tiles manufacturers','Chemical','Commercial Vehicle Repair','CONSUMER DURABLES','Defense & Military','ECOMMERCE','EDUCATION AND TRAINING','Electrical & Mechanical Assembly','Electrical Motors, Generators & Transformers','Electrical Switchgear', 'Electronic Equipments','Elevators & Escalators','Fabricated Metal Products','Fertiliser','Filtration','FINANCIAL SERVICES','FMCG','Food & Beverage','Games & Toys','GEMS AND JEWELLERY','Handheld Power Tools','HEALTHCARE','HVAC & Flex Duct','INFRASTRUCTURE','INSURANCE','IT & ITES','Leather processing and product manufacturing','LED, Lighting Equipment and Electrical Lamps','Machine Tools','Marine','Material Lifting and Handling Equipment','MEDIA AND ENTERTAINMENT',
+                'Medical and Surgical Equipment','Mining','Oil, Gas & Petrochemicals','Other General Industrial Manufacturing','Other Maintemance, Repair and Overhaul','Other Vehicle Repair and Maintenance','Pharmaceuticals','Plastic Components Manufacturing','Plumbing','Power Generation','Printing & Packaging','Pulp & Paper','Pumps & Compressors','Railways','Renewable Energy - Solar','Renewable Energy - Wind','RETAIL','ROADS','Rubber Components Manufacturing','Special Purpose Machinery','Special Vehicles Manufacturing','Sports goods and Equipments','Steel & Metals','Subcontractors & Applicators','Taps & Valves','TELECOMMUNICATIONS','Textile','TOURISM AND HOSPITALITY','Wastewater','Wood work & Plywood Manufacturing'],
+       What_is_the_purpose_use__c:['','Maintenance of Machinery or Facility','For use in product assembly or manufacturing','Automotive repair & maintenance','Personal Use or Home equipment Repair','Trading/Re-selling'],
+      Number_of_Employees_Custom__c:['','0-20','20-100','100-500','>500'],
+     Job_Title__c:['','Proprietor/Owner','Director','CEO','Supervisor','Engineer','Design Engineer','General Manager','Partner','Manager','Service Engineer','Mechanic','Maintenance Manager','Plant Head/Plant Manager','Purchase Manager/Procurement Manager','Maintenance operator','Contractor','Consultant/Advisor','Sales Manager','Marketing Manager','Project manager','Team leader','Industrial worker','Quality head','Quality Engineer','Administrator','Assistant','Planner','Officer','Fitter','Technician','Other','Managing Director','Operations Manager','Architect/Interior Designer','Technology Manager','R&D Manager','Scientist','Production Manager','Student','Professor','Vice President','Application Manager','Fabrication Manager'],
+        Role_in_organisation__c:['','I take all decisions related to purchase of material/parts used in manufacturing repair and maintenance','I am involved in evaluating better manufacturing/repair/maintenance solutions to ensure better performance','I operate repair and maintain machinery or repair vehicles to ensure smooth functioning'],
+        Hot_Lead__c:['','Yes'],
+    },
+    edit: function(values) {
+      $(".edit i", this)
+        .removeClass('fa-pencil')
+        .addClass('fa-save')
+        .attr('title', 'Save');
+
+      pickers[this] = new Pikaday({
+        field: $("td[data-field=birthday] input", this)[0],
+        format: 'MMM D, YYYY'
+      });
+    },
+    save: function(values) {
+      $(".edit i", this)
+        .removeClass('fa-save')
+        .addClass('fa-pencil')
+        .attr('title', 'Edit');
+
+      if (this in pickers) {
+        pickers[this].destroy();
+        delete pickers[this];
+      }
+    },
+    cancel: function(values) {
+      $(".edit i", this)
+        .removeClass('fa-save')
+        .addClass('fa-pencil')
+        .attr('title', 'Edit');
+
+      if (this in pickers) {
+        pickers[this].destroy();
+        delete pickers[this];
+      }
+    }
+  });
+});
+  
+}
+
+$(".add-row").click(function(){
+  $("#editableTable").find("tbody tr:first").before("<tr><td data-field='name'></td><td data-field='name'></td><td data-field='name'></td><td data-field='name'></td><td><a class='button button-small edit' title='Edit'><i class='fa fa-pencil'></i></a> <a class='button button-small' title='Delete'><i class='fa fa-trash'></i></a></td></tr>");   
+  editTable();  
+  setTimeout(function(){   
+    $("#editableTable").find("tbody tr:first td:last a[title='Edit']").click(); 
+  }, 200); 
+  
+  setTimeout(function(){ 
+    $("#editableTable").find("tbody tr:first td:first input[type='text']").focus();
+      }, 300); 
+  
+   $("#editableTable").find("a[title='Delete']").unbind('click').click(function(e){
+        $(this).closest("tr").remove();
+    });
+   
+});
+
+    
+  function uploadComplete(record) {
+           paraFunction('aaa');
+    }
+    
+
+$("#editableTable").find("a[title='Delete']").click(function(e){  
+  var x;
+    if (confirm("Are you sure you want to delete entire row?") == true) {
+        $(this).closest("tr").remove();
+    } else {
+        
+    }     
+});
+
+  </script>
+    
+    <script>
+            $(document).ready(function() {
+                var table = $('#example').DataTable( {
+                    "lengthMenu": [[4,10, 25, 50, -1], [4,10, 25, 50, "All"]],
+                    "bPaginate": true,
+                    "bLengthChange": false,
+                    "bFilter": true,
+                    "bInfo": true,
+                    "bAutoWidth": false, 
+                    "stateSave" : true
+                } ); 
+        } );
+    </script>
+  <apex:form id="f">
+    <apex:actionFunction action="{!updateLead}" name="updateLead" reRender="datatable" status="actStatusId">
+            <apex:param name="myParam" value=""/>
+        </apex:actionFunction>
+    </apex:form>
+     </body>
+       </html>
+  </apex:outputPanel>    
+</apex:page>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Industry__c</columns>
+    <columns>Number_Of_Employees__c</columns>
+    <columns>Industry_NumberofEmployees__c</columns>
+    <columns>Annualized_value_estimation__c</columns>
+    <columns>Lead_classification_basis_value__c</columns>
+    <columns>Industry_priority__c</columns>
+    <columns>Grade__c</columns>
+    <columns>Lead_priority__c</columns>
+    <columns>SBU__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Industry__c</field>
+        <operation>contains</operation>
+        <value>Electrical/</value>
+    </filters>
+    <label>All</label>
+</ListView>

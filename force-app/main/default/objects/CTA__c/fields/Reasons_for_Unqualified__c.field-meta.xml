@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_for_Unqualified__c</fullName>
+    <externalId>false</externalId>
+    <label>Reasons for Unqualified</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Couldn&apos;t connect</fullName>
+                <default>false</default>
+                <label>Couldn&apos;t connect</label>
+            </value>
+            <value>
+                <fullName>Customer needs specific product – not in our range</fullName>
+                <default>false</default>
+                <label>Customer needs specific product – not in our range</label>
+            </value>
+            <value>
+                <fullName>Didn&apos;t interact with any CTA</fullName>
+                <default>false</default>
+                <label>Didn&apos;t interact with any CTA</label>
+            </value>
+            <value>
+                <fullName>Existing customer with existing application</fullName>
+                <default>false</default>
+                <label>Existing customer with existing application</label>
+            </value>
+            <value>
+                <fullName>Irrelevant industry</fullName>
+                <default>false</default>
+                <label>Irrelevant industry</label>
+            </value>
+            <value>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+                <label>Not interested</label>
+            </value>
+            <value>
+                <fullName>Outside India lead</fullName>
+                <default>false</default>
+                <label>Outside India lead</label>
+            </value>
+            <value>
+                <fullName>Personal use</fullName>
+                <default>false</default>
+                <label>Personal use</label>
+            </value>
+            <value>
+                <fullName>Trader/reseller catering to existing LOCTITE customer</fullName>
+                <default>false</default>
+                <label>Trader/reseller catering to existing LOCTITE customer</label>
+            </value>
+            <value>
+                <fullName>Trader/reseller - product/price expectation didn&apos;t match</fullName>
+                <default>false</default>
+                <label>Trader/reseller - product/price expectation didn&apos;t match</label>
+            </value>
+            <value>
+                <fullName>Bought from somewhere else</fullName>
+                <default>false</default>
+                <label>Bought from somewhere else</label>
+            </value>
+            <value>
+                <fullName>Sample not received</fullName>
+                <default>false</default>
+                <label>Sample not received</label>
+            </value>
+            <value>
+                <fullName>Duplicate enquiry</fullName>
+                <default>false</default>
+                <label>Duplicate enquiry</label>
+            </value>
+            <value>
+                <fullName>Not much potential</fullName>
+                <default>false</default>
+                <label>Not much potential</label>
+            </value>
+            <value>
+                <fullName>Customer has no current requirement</fullName>
+                <default>false</default>
+                <label>Customer has no current requirement</label>
+            </value>
+            <value>
+                <fullName>Price issue</fullName>
+                <default>false</default>
+                <label>Price issue</label>
+            </value>
+            <value>
+                <fullName>Trader/reseller - not interested</fullName>
+                <default>false</default>
+                <label>Trader/reseller - not interested</label>
+            </value>
+            <value>
+                <fullName>Trader/reseller - not in industrial space</fullName>
+                <default>false</default>
+                <label>Trader/reseller - not in industrial space</label>
+            </value>
+            <value>
+                <fullName>Language barrier</fullName>
+                <default>false</default>
+                <label>Language barrier</label>
+            </value>
+            <value>
+                <fullName>Placed an eCom order for customer</fullName>
+                <default>false</default>
+                <label>Placed an eCom order for customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

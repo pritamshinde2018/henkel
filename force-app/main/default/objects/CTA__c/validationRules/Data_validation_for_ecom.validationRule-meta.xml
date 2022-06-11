@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_validation_for_ecom</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISPICKVAL(Ecoomerce_Qualification__c, &apos;Speak to IST&apos;)  ,  NOT( ISPICKVAL(  Lead__r.CC_Status__c  , &apos;Data Validated&apos;) ))</errorConditionFormula>
+    <errorMessage>Please Validate the data &amp; Make sure CC status Data Validated</errorMessage>
+</ValidationRule>

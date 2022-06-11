@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IST_Comments__c</fullName>
+    <externalId>false</externalId>
+    <label>IST Comments</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Placed another order for the customer online</fullName>
+                <default>false</default>
+                <label>Placed another order for the customer online</label>
+            </value>
+            <value>
+                <fullName>Working on getting the order offline</fullName>
+                <default>false</default>
+                <label>Working on getting the order offline</label>
+            </value>
+            <value>
+                <fullName>Customer not interested</fullName>
+                <default>false</default>
+                <label>Customer not interested</label>
+            </value>
+            <value>
+                <fullName>Unable to connect with the customer despite 3 attempts</fullName>
+                <default>false</default>
+                <label>Unable to connect with the customer despite 3 attempts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

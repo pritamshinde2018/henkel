@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>CTA__c</entityName>
+    <fieldName>CTA_stage__c</fieldName>
+    <masterLabel>CTA path - Ecommerce</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Assigned to IST</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Data Collection Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Data and Intent Validation Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Pre-sales nurturing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Ecoomerce_Qualification__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Unqualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>eCommerce</recordTypeName>
+</PathAssistant>

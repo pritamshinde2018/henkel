@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Bucket__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Bucket</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternate trial Required</fullName>
+                <default>false</default>
+                <label>Alternate trial Required</label>
+            </value>
+            <value>
+                <fullName>Awaiting Invoice</fullName>
+                <default>false</default>
+                <label>Awaiting Invoice</label>
+            </value>
+            <value>
+                <fullName>Contractor/Consultants</fullName>
+                <default>false</default>
+                <label>Contractor/Consultants</label>
+            </value>
+            <value>
+                <fullName>Customer has no current requirement</fullName>
+                <default>false</default>
+                <label>Customer has no current requirement</label>
+            </value>
+            <value>
+                <fullName>Customer not responding</fullName>
+                <default>false</default>
+                <label>Customer not responding</label>
+            </value>
+            <value>
+                <fullName>Huge Lead</fullName>
+                <default>false</default>
+                <label>Huge Lead</label>
+            </value>
+            <value>
+                <fullName>Lead dropped due to high Price of our product</fullName>
+                <default>false</default>
+                <label>Lead dropped due to high Price of our product</label>
+            </value>
+            <value>
+                <fullName>Not a promising lead</fullName>
+                <default>false</default>
+                <label>Not a promising lead</label>
+            </value>
+            <value>
+                <fullName>Personal Use Leads</fullName>
+                <default>false</default>
+                <label>Personal Use Leads</label>
+            </value>
+            <value>
+                <fullName>Promising Lead</fullName>
+                <default>false</default>
+                <label>Promising Lead</label>
+            </value>
+            <value>
+                <fullName>Purchased from Trader</fullName>
+                <default>false</default>
+                <label>Purchased from Trader</label>
+            </value>
+            <value>
+                <fullName>Trader</fullName>
+                <default>false</default>
+                <label>Trader</label>
+            </value>
+            <value>
+                <fullName>Trial On Hold</fullName>
+                <default>false</default>
+                <label>Trial On Hold</label>
+            </value>
+            <value>
+                <fullName>Trial Successful- Customer Awaiting Henkel Support</fullName>
+                <default>false</default>
+                <label>Trial Successful- Customer Awaiting Henkel Support</label>
+            </value>
+            <value>
+                <fullName>Trial Successful- Henkel Awaiting Customer Order</fullName>
+                <default>false</default>
+                <label>Trial Successful- Henkel Awaiting Customer Order</label>
+            </value>
+            <value>
+                <fullName>Product not in our range</fullName>
+                <default>false</default>
+                <label>Product not in our range</label>
+            </value>
+            <value>
+                <fullName>eCommerce lead with no further scope</fullName>
+                <default>false</default>
+                <label>eCommerce lead with no further scope</label>
+            </value>
+            <value>
+                <fullName>Additional contact for ACE project</fullName>
+                <default>false</default>
+                <label>Additional contact for ACE project</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

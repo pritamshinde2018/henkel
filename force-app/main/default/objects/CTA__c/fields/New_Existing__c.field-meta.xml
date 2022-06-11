@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Existing__c</fullName>
+    <externalId>false</externalId>
+    <label>New/Existing</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Existing customer &amp; existing application</fullName>
+                <default>false</default>
+                <label>Existing customer &amp; existing application</label>
+            </value>
+            <value>
+                <fullName>Existing customer &amp; new application</fullName>
+                <default>false</default>
+                <label>Existing customer &amp; new application</label>
+            </value>
+            <value>
+                <fullName>New customer – competitor adhesive</fullName>
+                <default>false</default>
+                <label>New customer – competitor adhesive</label>
+            </value>
+            <value>
+                <fullName>New customer – conventional method</fullName>
+                <default>false</default>
+                <label>New customer – conventional method</label>
+            </value>
+            <value>
+                <fullName>personal use</fullName>
+                <default>false</default>
+                <label>personal use</label>
+            </value>
+            <value>
+                <fullName>Trader – Competitor adhesives</fullName>
+                <default>false</default>
+                <label>Trader – Competitor adhesives</label>
+            </value>
+            <value>
+                <fullName>Trader – Henkel products</fullName>
+                <default>false</default>
+                <label>Trader – Henkel products</label>
+            </value>
+            <value>
+                <fullName>New customer – No current method</fullName>
+                <default>false</default>
+                <label>New customer – No current method</label>
+            </value>
+            <value>
+                <fullName>Irrelevant Segment</fullName>
+                <default>false</default>
+                <label>Irrelevant Segment</label>
+            </value>
+            <value>
+                <fullName>Uncconectable</fullName>
+                <default>false</default>
+                <label>Uncconectable</label>
+            </value>
+            <value>
+                <fullName>Local to Authorized distributor</fullName>
+                <default>false</default>
+                <label>Local to Authorized distributor</label>
+            </value>
+            <value>
+                <fullName>Bought from eCommerce</fullName>
+                <default>false</default>
+                <label>Bought from eCommerce</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Research_Inputs_New__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( (NOT(ISBLANK(What_was_the_initial_enquiry__c)) || NOT(ISBLANK(What_does_the_customer_do__c)) || NOT(ISBLANK(How_much_do_they_manufacture__c)) || NOT(ISBLANK(Who_are_we_talking_to__c)) || NOT(ISBLANK(What_are_the_applications_discussed__c)) || NOT(ISBLANK(When_did_we_fully_qualify_the_customer__c)) ||
+NOT(ISBLANK( Other_comments_customer__c ))||NOT(ISBLANK( Other_comments_2_customer__c))), &apos;1)Initial enquiry for: &apos;+(What_was_the_initial_enquiry__c +&apos;2)Customer is into: &apos;+What_does_the_customer_do__c+
+&apos;3)scale of mfg/repair: &apos;+How_much_do_they_manufacture__c+&apos;4)Designation: &apos;+Who_are_we_talking_to__c+&apos;5)Applications discussed: &apos;+What_are_the_applications_discussed__c+
+&apos;6)Qualified on: &apos;+When_did_we_fully_qualify_the_customer__c+&apos;7)Comments: &apos;+Other_comments_customer__c+Other_comments_2_customer__c ),
+IF((NOT(ISBLANK(Where_are_you_located_city__c)) || NOT(ISBLANK(Why_Henkel__c)) || NOT(ISBLANK(Dealing_in_these_brands__c)) || NOT(ISBLANK(Servicing_these_industrial_hubs__c)) || NOT(ISBLANK(Industrial_annual_turnover__c)) || NOT(ISBLANK(Team_strength__c)) || NOT(ISBLANK(Strong_presence_in_these_industries__c))||NOT(ISBLANK( Other_comments_trader__c))||NOT(ISBLANK( Other_Comments_2_trader__c ))),
+(&apos;1)Located in: &apos;+Where_are_you_located_city__c+&apos;2)Brands: &apos;+Dealing_in_these_brands__c+
+&apos;3)Industrial hubs: &apos;+Servicing_these_industrial_hubs__c+&apos;4)Industries: &apos;+Strong_presence_in_these_industries__c+&apos;5)Ann. sales: &apos;+Industrial_annual_turnover__c+&apos;6)Team strength: &apos;+Team_strength__c+&apos;7)Why Henkel: &apos;+Why_Henkel__c+BR()+&apos;8)Comments: &apos;+
+Other_comments_trader__c+Other_Comments_2_trader__c ), &apos;&apos;) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Research Inputs New</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

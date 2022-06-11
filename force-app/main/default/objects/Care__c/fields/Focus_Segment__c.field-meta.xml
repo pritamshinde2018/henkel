@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Focus_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Focus Segment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>E-Machinery</fullName>
+                <default>false</default>
+                <label>E-Machinery</label>
+            </value>
+            <value>
+                <fullName>Durable Goods</fullName>
+                <default>false</default>
+                <label>Durable Goods</label>
+            </value>
+            <value>
+                <fullName>Industrial Production</fullName>
+                <default>false</default>
+                <label>Industrial Production</label>
+            </value>
+            <value>
+                <fullName>Capital goods - Fluid management</fullName>
+                <default>false</default>
+                <label>Capital goods - Fluid management</label>
+            </value>
+            <value>
+                <fullName>Capital goods - Lifting &amp; Handling</fullName>
+                <default>false</default>
+                <label>Capital goods - Lifting &amp; Handling</label>
+            </value>
+            <value>
+                <fullName>Capital goods - Transmission</fullName>
+                <default>false</default>
+                <label>Capital goods - Transmission</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Mining &amp; Quarrying</fullName>
+                <default>false</default>
+                <label>Maintenance - Mining &amp; Quarrying</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Construction Aggregates</fullName>
+                <default>false</default>
+                <label>Maintenance - Construction Aggregates</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Petrochemicals</fullName>
+                <default>false</default>
+                <label>Maintenance - Petrochemicals</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Metal transformation</fullName>
+                <default>false</default>
+                <label>Maintenance - Metal transformation</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Power Generation</fullName>
+                <default>false</default>
+                <label>Maintenance - Power Generation</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Waste &amp; Wasterwater</fullName>
+                <default>false</default>
+                <label>Maintenance - Waste &amp; Wasterwater</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Pulp &amp; Paper</fullName>
+                <default>false</default>
+                <label>Maintenance - Pulp &amp; Paper</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Food &amp; Pharma</fullName>
+                <default>false</default>
+                <label>Maintenance - Food &amp; Pharma</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Industrial Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance - Industrial Maintenance</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Railways</fullName>
+                <default>false</default>
+                <label>Maintenance - Railways</label>
+            </value>
+            <value>
+                <fullName>Maintenance - Vehicle Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance - Vehicle Maintenance</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>IA - AgCon</fullName>
+                <default>false</default>
+                <label>IA - AgCon</label>
+            </value>
+            <value>
+                <fullName>IA - Electronics</fullName>
+                <default>false</default>
+                <label>IA - Electronics</label>
+            </value>
+            <value>
+                <fullName>IA - Filtration</fullName>
+                <default>false</default>
+                <label>IA - Filtration</label>
+            </value>
+            <value>
+                <fullName>IA - Appliances</fullName>
+                <default>false</default>
+                <label>IA - Appliances</label>
+            </value>
+            <value>
+                <fullName>IA - Medical</fullName>
+                <default>false</default>
+                <label>IA - Medical</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,86 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:lightningQuickAction,force:hasRecordId" access="global" controller = "leadControlleronCTA">
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="recId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.handleClick}"/>
+    
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    
+    <lightning:spinner aura:id="mySpinner" variant="brand" size="medium" class="slds-hide"/>
+    
+    <lightning:recordEditForm recordId="{!v.recId}" objectApiName="Lead" onsuccess = "{!c.successClick}" onerror="{!c.handleError}">
+        
+          
+            
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                    <span>
+                        <div class="slds-text-heading_small"> <b>Additional Details</b></div>
+                        
+                        
+                        <lightning:inputField fieldName="FirstName" />
+                        <lightning:inputField fieldName="LastName" />
+                        <lightning:inputField fieldName="Company" />
+                        <lightning:inputField fieldName="Phone" />
+                        <lightning:inputField fieldName="MobilePhone" />
+                        <lightning:inputField fieldName="Email" />
+                        <lightning:inputField fieldName="What_the_company_does__c" />
+                        <lightning:inputField fieldName="Industry" />
+                        <lightning:inputField fieldName="Number_of_Employees_Custom__c" />
+                        <lightning:inputField fieldName="Designation__c" />
+                        <lightning:inputField fieldName="Department__c" />
+                        <lightning:inputField fieldName="Job_Title__c" />
+                        <lightning:inputField fieldName="Role_in_organisation__c" /> 
+                        <lightning:inputField fieldName="Tell_us_about_your_application_in_one_li__c" />
+                        <lightning:inputField fieldName="What_is_the_purpose_use__c" />
+                        <lightning:inputField fieldName="CC_Current_Method__c" />
+                        <lightning:inputField fieldName="Data_validation__c" />
+                        <lightning:inputField fieldName="Street" />
+                        <lightning:inputField fieldName="State" />
+                        <lightning:inputField fieldName="Country" />
+                        <lightning:inputField fieldName="City" />
+                        <lightning:inputField fieldName="PostalCode" />
+                        
+                        
+                        
+                        <div class="slds-text-heading_small"><b>Call Centre Section</b></div>
+                        <lightning:inputField fieldName="CC_Status__c" disabled="true"/>
+                        <lightning:inputField fieldName="CC_Remarks_1__c" disabled="true"/>
+                        <lightning:inputField fieldName="CC_Remarks_2__c" disabled="true"/>
+                        <lightning:inputField fieldName="CC_Remarks_3__c" disabled="true"/>
+                        
+                        
+                    </span>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                    <span>
+                        <div class="slds-text-heading_small"> <b>India Mart Section</b> </div>
+                        
+                        <lightning:inputField fieldName="Product_Name__c" />
+                        <lightning:inputField fieldName="Date_Of_Enquiry__c" /> 
+                        <lightning:inputField fieldName="Product_Quantity__c" />
+                        <lightning:inputField fieldName="Unit__c" />
+                        <lightning:inputField fieldName="IM_Status__c" />
+                        <lightning:inputField fieldName="Time_Of_Enquiry__c" />
+                        <lightning:inputField fieldName="Subject__c" />
+                        
+                        
+                    </span><br><br></br></br>
+                    
+                    
+                    
+                </div>         
+                
+                
+            </div>
+            
+            
+            <lightning:messages aura:id="OppMessage" /> 
+            <lightning:button class="slds-m-top_small" variant="brand" type="submit" name="Save" label="Save" />
+            
+            </lightning:recordEditForm>
+        
+
+    
+</aura:component>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X6_Sampling_CTAs_Warm_HM_to_attempt</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6 AND 7</booleanFilter>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CTA_Created_Date__c</columns>
+    <columns>Lead_Name__c</columns>
+    <columns>Company__c</columns>
+    <columns>CTA_stage__c</columns>
+    <columns>Lead_Status__c</columns>
+    <columns>Lead_Created_Date__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Rating_Custom__c</columns>
+    <columns>Rating_IMG__c</columns>
+    <columns>Annualized_value_estimation__c</columns>
+    <columns>Lead_classification_basis_value__c</columns>
+    <columns>Pardot_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CTA_stage__c</field>
+        <operation>equals</operation>
+        <value>Assigned to IST</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>CTA__c.Sampling</value>
+    </filters>
+    <filters>
+        <field>First_click_source__c</field>
+        <operation>notContain</operation>
+        <value>youtube; sub2unlock.com; org.telegram.messenger; mymagictrick.com; freeindiasample.com; www.mapquest.com; freesampleinindia.com; freeshoppingdeal; freeshoppingdeal.com; telegram.dog; org.telegram.plus; www.maalfreekaa.in</value>
+    </filters>
+    <filters>
+        <field>Last_click_source__c</field>
+        <operation>notContain</operation>
+        <value>youtube; sub2unlock.com; org.telegram.messenger; mymagictrick.com; freeindiasample.com; www.mapquest.com; freesampleinindia.com; freeshoppingdeal; freeshoppingdeal.com; telegram.dog; org.telegram.plus; www.maalfreekaa.in</value>
+    </filters>
+    <filters>
+        <field>Rating_Custom__c</field>
+        <operation>equals</operation>
+        <value>Warm</value>
+    </filters>
+    <filters>
+        <field>Test_P__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Hemant</value>
+    </filters>
+    <label>6. Sampling CTAs Warm - HM to attempt</label>
+</ListView>

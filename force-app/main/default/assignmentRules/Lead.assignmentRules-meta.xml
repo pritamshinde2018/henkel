@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>assign pardot to try loctite admin</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>varun.sahay@henkel.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.pi__url__c</field>
+                <operation>notEqual</operation>
+                <value>NULL</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

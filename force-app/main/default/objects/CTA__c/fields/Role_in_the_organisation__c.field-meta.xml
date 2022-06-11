@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_in_the_organisation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Lead__r.Role_in_organisation__c  &lt;&gt; Null, Lead__r.Role_in_organisation__c,  Customer_Contact__r.Role_in_organisation__c )</formula>
+    <label>Role in the organisation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

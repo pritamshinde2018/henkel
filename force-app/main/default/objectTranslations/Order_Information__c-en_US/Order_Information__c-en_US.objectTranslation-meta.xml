@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>E-Com Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>E-Com Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>Call Center</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Order Information Layout</layout>
+        <sections>
+            <label></label>
+            <section>Billing Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Center Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ecom JSON</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>UTM DATA</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Canceled_Booked_Order_Other_Comments</name>
+    </validationRules>
+</CustomObjectTranslation>

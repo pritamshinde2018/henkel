@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ecom_order_to_restrict_CTA_Stage_Move</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(   ISPICKVAL(PRIORVALUE( CTA_stage__c  ), &apos;Qualified&apos;) , (RecordType.DeveloperName = &apos;eCommerce&apos;), ISCHANGED( CTA_stage__c )  )</errorConditionFormula>
+    <errorMessage>You can not move CTA Stage for Ecommerce if CTA Qualified</errorMessage>
+</ValidationRule>

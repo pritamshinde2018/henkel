@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Update leads App by Call Center People</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Call Centre</label>
+    <tabs>IndiaMart_Leads</tabs>
+    <tabs>Call_Center_Leads</tabs>
+    <tabs>Webinar_Leads</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Plumbing_Lead</tabs>
+</CustomApplication>

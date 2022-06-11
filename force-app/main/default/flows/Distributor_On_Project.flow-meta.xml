@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Distributor_On_Project</name>
+        <label>Distributor On Project</label>
+        <locationX>793</locationX>
+        <locationY>370</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Distributor_On_Project__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Distributor_Pincodes.Distributor_Name__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_Pincode_Mapping</name>
+        <label>Check Pincode Mapping</label>
+        <locationX>506</locationX>
+        <locationY>375</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Pincode</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Distributor_Pincodes.Pincode__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Distributor_On_Project</targetReference>
+            </connector>
+            <label>Check Pincode</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Distributor On Project {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Distributor On Project</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Distributor_Pincodes</name>
+        <label>Get Distributor Pincodes</label>
+        <locationX>216</locationX>
+        <locationY>357</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Pincode_Mapping</targetReference>
+        </connector>
+        <filters>
+            <field>Pincode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Lead__r.PostalCode</elementReference>
+            </value>
+        </filters>
+        <object>Distributor_Pincode_Mapping__c</object>
+    </recordLookups>
+    <startElementReference>Get_Distributor_Pincodes</startElementReference>
+    <status>Obsolete</status>
+    <variables>
+        <name>DistributorName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>Get_Distributor_Pincodes.Distributor_Name__c</elementReference>
+        </value>
+    </variables>
+</Flow>

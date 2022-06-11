@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Low_Intent_Old_CTA_s_Pre_qualify_TU</fullName>
+    <columns>NAME</columns>
+    <columns>Date_From_Final_CTA_Created_Date__c</columns>
+    <columns>Lead_Created_Date__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Lead__c</columns>
+    <columns>CTA_stage__c</columns>
+    <columns>Lead_Status__c</columns>
+    <columns>CC_Status__c</columns>
+    <columns>CTA_CC_Remarks_1__c</columns>
+    <columns>CTA_CC_Remarks_2__c</columns>
+    <columns>CTA_CC_Remarks_3__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Intent_validation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CTA_stage__c</field>
+        <operation>equals</operation>
+        <value>New,Data Collection Process,Data and Intent Validation Process</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Tulika</value>
+    </filters>
+    <filters>
+        <field>Old_CTA_Owner_Updated__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>CTA__c.GM_Design_Guide,CTA__c.Masterclass</value>
+    </filters>
+    <label>All Low Intent Old CTA&apos;s Pre-qualify- TU</label>
+</ListView>

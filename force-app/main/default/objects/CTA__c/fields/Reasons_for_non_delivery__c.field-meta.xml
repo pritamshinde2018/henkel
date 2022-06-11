@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_for_non_delivery__c</fullName>
+    <externalId>false</externalId>
+    <label>Reasons for non-delivery</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Out Of Delivery Area - To be delivered through alternate delivery partner</fullName>
+                <default>false</default>
+                <label>Out Of Delivery Area - To be delivered through alternate delivery partner</label>
+            </value>
+            <value>
+                <fullName>Consignee Address Incomplete/Incorrect</fullName>
+                <default>false</default>
+                <label>Consignee Address Incomplete/Incorrect</label>
+            </value>
+            <value>
+                <fullName>Consignee Address Unlocatable/Landmark Needed</fullName>
+                <default>false</default>
+                <label>Consignee Address Unlocatable/Landmark Needed</label>
+            </value>
+            <value>
+                <fullName>Consignee Not Available</fullName>
+                <default>false</default>
+                <label>Consignee Not Available</label>
+            </value>
+            <value>
+                <fullName>Consignee Out Of Station</fullName>
+                <default>false</default>
+                <label>Consignee Out Of Station</label>
+            </value>
+            <value>
+                <fullName>Consignee Refused To Accept</fullName>
+                <default>false</default>
+                <label>Consignee Refused To Accept</label>
+            </value>
+            <value>
+                <fullName>Consignee Shifted From The Given Address</fullName>
+                <default>false</default>
+                <label>Consignee Shifted From The Given Address</label>
+            </value>
+            <value>
+                <fullName>Consignee&apos;S Address Unlocatable/Landmark Needed</fullName>
+                <default>false</default>
+                <label>Consignee&apos;S Address Unlocatable/Landmark Needed</label>
+            </value>
+            <value>
+                <fullName>Delivery Attempted-Premises Closed</fullName>
+                <default>false</default>
+                <label>Delivery Attempted-Premises Closed</label>
+            </value>
+            <value>
+                <fullName>Need Department Name/Extention Number</fullName>
+                <default>false</default>
+                <label>Need Department Name/Extention Number</label>
+            </value>
+            <value>
+                <fullName>No Such Consignee At The Given Address</fullName>
+                <default>false</default>
+                <label>No Such Consignee At The Given Address</label>
+            </value>
+            <value>
+                <fullName>Out Of Delivery Area</fullName>
+                <default>false</default>
+                <label>Out Of Delivery Area</label>
+            </value>
+            <value>
+                <fullName>Out Of Delivery Area - to be delivered through India Post</fullName>
+                <default>false</default>
+                <label>Out Of Delivery Area - to be delivered through India Post</label>
+            </value>
+            <value>
+                <fullName>Wrong Pincode, Will Impact Delivery</fullName>
+                <default>false</default>
+                <label>Wrong Pincode, Will Impact Delivery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

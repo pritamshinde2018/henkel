@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GM_Design_Guide</fullName>
+    <active>true</active>
+    <label>GM Design Guide</label>
+    <picklistValues>
+        <picklist>CTA_stage__c</picklist>
+        <values>
+            <fullName>Assigned to IST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed abandoned cart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Collection Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data and Intent Validation Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified by call center team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Follow up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Nurturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-sales nurturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DSE_responsible__c</picklist>
+        <values>
+            <fullName>Aditya  %28Darbari Lal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajay Suthar %28Innovative Engg%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amrit Singh %28Compac%2CMohali%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anadi %28RELSOL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anand Lakhani  %28Innovative Engineering - Rajkot %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ankit Vyas %28Shil Technologies-Baroda%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arindam Dutta %28C M Corporation%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bastin Thomas %28Aqua Engineering Services - Cochin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>David Yesaya %28M P Brothers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deepak %28Namic Industrial Solutions%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diwakar Yadav %28Nikhil Shah %26 Associates%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G%2E Kanagaraj %28CUTMAC MARKETING PVT LTD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gautam Vora  %28Shaildeep Enterprise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gopal Patel %28Multiweld Engineering %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gourav Kale %28Vison Industrial Hub%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Govind %28Selwel Marketing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haridas Patil %28Trade Syndicate%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Himanshu %28Himanshu Enterprise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janmajay Kumar %28Suman Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jaydeep Goswami  %28Innovative Engineering - Rajkot %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayesh Mandaliya %28Innovative Engineering - Rajkot %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jayesh Mandaliya %28Innovative Engineering products pvt ltd%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junaid %28A S Multi %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K%2E Vinoth Kumar %28FRV Associates%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kamal Panchal  %28Sartech Solutions Pvt Ltd%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kamlesh %28Compac%2CLudhiana%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kamlesh Srivastava %28Compac Technologies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Krishna Nagle %28Bhandari Technotrade%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kunal Desai %28TESCO %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logeswaran %28Saroj Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manish Kumar %28QSRS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manish Madan %28Sneh sales %28 Bahadurgarh Haryana %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manoj A%2E %28Prosol%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mansoor Lokhandwala %28Everest Agencies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayur Savsani %28Innovative Engineering products pvt ltd%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mehul Sonar %28Innovative Engineering products pvt ltd%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Milind D %28Dawn Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2EMalusare %28Swaraj Corporation%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mritunjay %28Multiweld engineering%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mukul %28Rubber wing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muthuraj K %28Sunchem%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namit Hajare %28N H Associates%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nayan %28Uni Sales India%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pankaj Kr%2E Singh %28Laxmi Metals%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parth Modi %28Ethertech solutions%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pon Selvam %28Prosol%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pradeep Bhandari %28Blackstone Disel%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prashant Bhosale %28Industrial Agencies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prem Narang %28PP Trading%2C Gwalior%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priyank Laad %28Vapi Techno%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rajat %28R%2EA%2ES%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rajkiran %28Sre Marshal Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rakesh %28MSR%29  %28Sadhuram %26 Sons%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rakshit %28Sellex Incorp%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramil Garg %28Sartech Solutions Pvt Ltd%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ravinder Giri %28Sartech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romil Shah %28Tech Tools%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sadhick Vali %28Srinivasa Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samkit Shah %28Innovative %E2%80%93 Rajkot%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandeep Verma %28Pradeep Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanjay  %28SAMIT SALES%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanjay %28Balbir singh %26 brothers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanjay Raghvani %28Pooja Agencies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santosh %28Industrial Solutions%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satish Chakram %28Suman Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheshkiran %28 Sellex Incorp%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shrenik Mehta %28Nilesh Sales %26 Agencies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somnath Kashid %28Swaraj Corporation%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subhash %28Hitech Adhesives%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sujit Kumar %28Multiweld%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunil Kumar %28S M Technosales%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swami %28Devi Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swapnil Fuse %28Selwel Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taher %28Elegant Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tushar Soni %28Industrial Engineering Services%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uday Rathod  %28NMCC %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veldroy  %28JAYKAY Enterprises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veldroy Fernandes %28Jaykay Enterperises%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijay Mehta %28Pooja Agencies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vikash Raz Chandan %28Shri Mahaluxmi Chemicals%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vimal Sukhanandi %28Innovative %E2%80%93 Ahmedabad%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vipin Jain %28Sarthak Sales%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virender %28RELSOL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virender Kumar %28Radiant Engineers%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Distributor_On_Project__c</picklist>
+        <values>
+            <fullName>AAD Marketing Engineers Private Ltd%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AKB Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APM Technosales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS Multisales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abhijeet Auto Components Pvt%2E ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aqua Engineering Cochin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aqua Engineering Services - Bangalore%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arihant Enterprises Indore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Solutions Indore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bala Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bhandari Techno Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bison Industrial Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blackstone Diesel Jodhpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAP Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chitrakut Auto Colours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compac Technologies India Ltd-LUD%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Darbarilal %26 Sons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dawn Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deepak Automobiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devi Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dynamic Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elegant Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etech Appliances Ankleshwar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethertech Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everest Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRV Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontline Marketing Bangalore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G A Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gurukripa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Henkel India%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HiTech Adhesives%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Himanshu Enterprises Bhopal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IES Kota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Agencies%28Kolhapur%29%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Solutions-Mumbai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Engineering Ahmedabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovative Engineering Rajkot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAY KAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khushi Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Krishna Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M P Brothers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metalcare Mumbai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiweld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2EH%2E Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namic industrial Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nanostuffs%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neptune Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Tech Engineers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nikhil Shah %26 Assoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nilesh Sales Agencies%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nitin Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PD Enterprises Ahmedabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PJ Enterprises Vadodara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PP Trading company Gwalior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perfect Sales Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pooja Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Popatlal %26 Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pradeep enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSRS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAS Ind Solns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raghvendra chem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rahul Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rajput Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relsol%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rubberwing%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S M Technosales P Ltd-Delhi%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S%2EP%2ETraders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samit Sales Pvt%2E Ltd%2E%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sar Tech Solutions Pvt Ltd- Noida%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saroj Enterprises%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sarthak Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sellex Incorp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selwel Enterprises %28P%29 LTD%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selwel Marketing Services%28Nashik%29%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shaildeep Enterprises Rajkot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shil Technologies Vadodara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shree Shyam Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shri Mahaluxmi Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shriram Traders Satna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham Industrial Marketing%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siddharth Trading Co%2E%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skytec Solutions%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sneh Sales Corp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sri Marshal Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Srihari Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Srinivasa - Trichy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Starlite Engineering Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suman Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunchem Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swaraj corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Tools Vadodara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Techno Weld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technovative Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesco Engineering%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Syndicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Syndicate%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuli Trade Private Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uni Sales India Ahmedabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uni Trade India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vapi Techno Traders%28Distributor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijayasree Agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision Industrial Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YAAL Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yash Auto Wheels</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ecoomerce_Qualification__c</picklist>
+        <values>
+            <fullName>Additional opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More value for the same products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More value for the same products %2B Additional opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One time eCommerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enquiry_status__c</picklist>
+        <values>
+            <fullName>Callback1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Callback2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>qualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Follow_up_action__c</picklist>
+        <values>
+            <fullName>Customer feedback awaited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor feedback awaited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineer feedback awaited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IST action needed %E2%80%93 callback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IST action needed %E2%80%93 follow-up for order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hot_Lead__c</picklist>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IM_Status__c</picklist>
+        <values>
+            <fullName>Intent to buy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More information on products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not able to contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IST_qualification_for_customer_intent__c</picklist>
+        <values>
+            <fullName>Customer interested in a seminar %28LMX%2FMRW%2FPlant audit%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer interested in a visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer is from a relevant company and is either a decision maker or influencer but is currently not showing much interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer is from a relevant company but neither decision maker nor influencer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Indiamart_QTYPE__c</picklist>
+        <values>
+            <fullName>Buy Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact Suppliers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Intent_validation__c</picklist>
+        <values>
+            <fullName>Callback1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Callback2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does not want to speak to IST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intends to speak to IST at a later date %28date for speaking to IST%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intends to speak to IST now</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Bucket__c</picklist>
+        <values>
+            <fullName>Additional contact for ACE project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alternate trial Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor%2FConsultants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer has no current requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer not responding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Huge Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead dropped due to high Price of our product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a promising lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Use Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product not in our range</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promising Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased from Trader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trader</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Successful- Customer Awaiting Henkel Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Successful- Henkel Awaiting Customer Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eCommerce lead with no further scope</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market_Segment__c</picklist>
+        <values>
+            <fullName>AA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VRM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Existing__c</picklist>
+        <values>
+            <fullName>Bought from eCommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing customer %26 existing application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing customer %26 new application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrelevant Segment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local to Authorized distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New customer %E2%80%93 No current method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New customer %E2%80%93 competitor adhesive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New customer %E2%80%93 conventional method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trader %E2%80%93 Competitor adhesives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trader %E2%80%93 Henkel products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncconectable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>personal use</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons_for_Unqualified__c</picklist>
+        <values>
+            <fullName>Bought from somewhere else</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Couldn%27t connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer has no current requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer needs specific product %E2%80%93 not in our range</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Didn%27t interact with any CTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing customer with existing application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrelevant industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Language barrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not much potential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outside India lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placed an eCom order for customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample not received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trader%2Freseller - not in industrial space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trader%2Freseller - not interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trader%2Freseller - product%2Fprice expectation didn%27t match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trader%2Freseller catering to existing LOCTITE customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons_for_non_delivery__c</picklist>
+        <values>
+            <fullName>Consignee Address Incomplete%2FIncorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignee Address Unlocatable%2FLandmark Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignee Not Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignee Out Of Station</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignee Refused To Accept</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignee Shifted From The Given Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignee%27S Address Unlocatable%2FLandmark Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Attempted-Premises Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Department Name%2FExtention Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Such Consignee At The Given Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out Of Delivery Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out Of Delivery Area - To be delivered through alternate delivery partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out Of Delivery Area - to be delivered through India Post</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Pincode%2C Will Impact Delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons_for_nurturing__c</picklist>
+        <values>
+            <fullName>Not the right timing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satisfied with current solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong contact person</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RecurringBusiness__c</picklist>
+        <values>
+            <fullName>One Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Engineer__c</picklist>
+        <values>
+            <fullName>Abhijeet Shrivastava</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abhinav Mahajan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abhisek Basu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Abhishek joshi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alok Shende</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amit Grewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amit Gupta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amit Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anand Boopathy %E2%80%93 IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arul P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AshishKumar Sinha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashutosh Mishra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bhanu Yadav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chandraprakash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deric Paul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dharmik Upadhyay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dhinesh Chockalingam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dinesh Kumar - RSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dinesh Kumar P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dinesh Rana %E2%80%93 IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gangadhararao Choppa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav Bhatt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaurav Vaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harikumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hemant Majali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irfan Malik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jagannathan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>James Oommen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jatin Suthar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kanishk Kaul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karthikeyan Balasubramaniam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kartik Joshi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kulbhushan %28VRM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kulbhushan Tiwari</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kuldeep Malhotra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kumar Ranjan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kunal Sachdeva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manas Behera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mangesh Gokhale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manoj Gautam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manoj Tandale %E2%80%93 IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mehul Lathiya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mohanraj Periasamy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mohit Mann</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muthukumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neeraj Jain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nikhil Malgi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omprakash Jha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pardeep Garg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pardeep Garg %E2%80%93 IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parminder Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parth Shah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pawan B%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ponpandian Rajaram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pradeep Mohapatra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pradeep Yadav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prakash Managooli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prakhar Maheshwari %E2%80%93 IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Praveen Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prem Kumar Ramasamy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prince Alexander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pushkar Malhotra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raghabeshwar Ghosh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rahul Yadav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rajat Panigrahi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rakesh Bachani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rakesh bade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ram Ratnam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramakrishnan B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rathinasamy Krishnamoorthy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rathinaswamy K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ravichandran R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ravichandran Ramamoorthy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rohit Shelke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sahil Thakral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sameer Patkule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandeep Dharwadkar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandeep Salunke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santhosh Ravichandran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santoshkumar BM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saquib Ahemad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sarthak Ariel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selvakumar Sakthivelu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senthil Gopal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shailendra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shashank Dhamankar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shrikant Naik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shubham Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shyam Kumar Kalangi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonu Kumar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sridharan C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suchit Lad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudeep Kapoor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sujit Mandal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sujit Thakur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suneel Nallabothula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Susheel Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swathika S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tarique Sarwar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tarun Chohan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tipu Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tushar Nerkar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utkarsh Shrivastava %E2%80%93 IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venugopal Amirthalingam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venugopal Amrithalingam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vijay Kathrotiya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vikas Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vikas V Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinay Bisht %E2%80%93 IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vipin Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vishal Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vivek Chadha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yogesh Sharma</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Which_Product_Sent__c</picklist>
+        <values>
+            <fullName>LOCTITE Retaining Compound 638</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCTITE Thread Sealants 542</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCTITE Threadlocker 243</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loctite 542</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loctite 55</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

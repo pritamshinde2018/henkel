@@ -1,0 +1,154 @@
+<apex:page controller="report_dailyReports">
+    <apex:pageblock title="Daily Reports">
+        <apex:pageBlockSection title="Summary">
+        <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td width="200px"><b>Type</b></td>
+                <td><b>Yesterday</b></td>
+                <td><b>MTD</b></td>
+                <td><b>YTD</b></td>
+            </tr>
+            <tr>
+                <td>Known Visitors</td>
+                <td>{!knownvisitors_yest}</td>
+                <td>{!knownvisitors_mtd}</td>
+                <td>{!knownvisitors_ytd}</td>
+            </tr>
+            <tr>
+                <td>MQLS</td>
+                <td>{!MQLs_yest}</td>
+                <td>{!MQLs_mtd}</td>
+                <td>{!MQLs_ytd}</td>
+            </tr>
+            <tr>
+                <td>NMQLs</td>
+                <td>{!NMQLs_yest}</td>
+                <td>{!NMQLs_mtd}</td>
+                <td>{!NMQLs_ytd}</td>
+            </tr>
+            <tr>
+                <td>Could Not Connect</td>
+                <td>{!NOCO_yest}</td>
+                <td>{!NOCO_mtd}</td>
+                <td>{!NOCO_ytd}</td>
+            </tr>
+            <tr>
+                <td>Fresh leads sent to CC team</td>
+                <td>{!freshlead_yest}</td>
+                <td>{!freshlead_mtd}</td>
+                <td>{!freshlead_ytd}</td>
+            </tr>
+            <tr>
+               <td>Callback</td>
+               <td>{!callback_yest}</td>
+               <td>{!callback_mtd}</td>
+               <td>{!callback_ytd}</td>
+            </tr>
+            <tr>
+               <td>Contact Us</td>
+               <td>{!contactus_yest}</td>
+               <td>{!contactus_mtd}</td>
+               <td>{!contactus_ytd}</td>
+            </tr>
+            <tr>
+               <td>Offer</td>
+               <td>{!offer_yest}</td>
+               <td>{!offer_mtd}</td>
+               <td>{!offer_ytd}</td>
+            </tr>
+        </table>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Segmentation by sample requested">
+        <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td width="200px"><b>Type</b></td>
+                <td><b>Known Visitors</b></td>
+                <td><b>MQLs</b></td>
+            </tr>
+            <tr>
+                <td>ThreadLocker</td>
+                <td>{!threadlocker_ytd}</td>
+                <td>{!threadlocker_ytd_mql}</td>
+            </tr>
+             <tr>
+                <td>Thread Sealant</td>
+                <td>{!threadsealant_ytd }</td>
+                <td>{!threadsealant_ytd_mql}</td>
+            </tr>
+            <tr>
+                <td>Retaining Compound</td>
+                <td>{!retainingcompound_ytd}</td>
+                <td>{!retainingcompound_ytd_mql}</td>
+            </tr>                     
+         </table>   
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Segmentation by What is the purpose/use">
+        <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td width="200px"><b>Type</b></td>
+                <td><b>Known Visitors</b></td>
+                <td><b>MQLs</b></td>
+            </tr>
+            <tr>
+                <td>Maintenance of Machinery OR Facility</td>
+                <td>{!whatpurposeytd1}</td>
+                <td>{!whatpurposeytd_m1}</td>
+            </tr>
+             <tr>
+                <td>For use in product assembly OR manufacturing</td>
+                <td>{!whatpurposeytd2}</td>
+                <td>{!whatpurposeytd_m2}</td>
+            </tr>
+            <tr>
+                <td>Automotive repair AND maintenance</td>
+                <td>{!whatpurposeytd3}</td>
+                <td>{!whatpurposeytd_m3}</td>
+            </tr>
+            <tr>
+                <td>Personal Use OR Home equipment Repair</td>
+                <td>{!whatpurposeytd4}</td>
+                <td>{!whatpurposeytd_m4}</td>
+            </tr>
+             <tr>
+                <td>Blanks</td>
+                <td>{!whatpurposeytd5}</td>
+                <td>{!whatpurposeytd_m5}</td>
+            </tr>                                          
+         </table>        
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Segmentation by Employees">
+        <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td width="200px"><b>Type</b></td>
+                <td><b>Known Visitors</b></td>
+                <td><b>MQLs</b></td>
+            </tr>
+            <tr>
+                <td>0-20</td>
+                <td>{!emply1}</td>
+                <td>{!emply_m1}</td>
+            </tr>
+             <tr>
+                <td>20-100</td>
+                <td>{!emply2}</td>
+                <td>{!emply_m2}</td>
+            </tr>
+            <tr>
+                <td>100-500</td>
+                <td>{!emply3}</td>
+                <td>{!emply_m3}</td>
+            </tr>
+            <tr>
+                <td>>500</td>
+                <td>{!emply4}</td>
+                <td>{!emply_m4}</td>
+            </tr>
+             <tr>
+                <td>Blanks</td>
+                <td>{!emply5}</td>
+                <td>{!emply_m5}</td>
+            </tr>                                          
+         </table>
+        </apex:pageBlockSection>
+    </apex:pageblock>
+</apex:page>

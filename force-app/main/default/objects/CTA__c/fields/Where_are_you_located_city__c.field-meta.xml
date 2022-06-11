@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Where_are_you_located_city__c</fullName>
+    <description>Research inputs – traders</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Research inputs – traders</inlineHelpText>
+    <label>Where are you located (city)?</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

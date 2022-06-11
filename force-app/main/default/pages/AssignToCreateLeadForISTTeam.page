@@ -1,0 +1,38 @@
+<apex:page standardController="Case"> <!-- extensions="AssignToCreateLeadForISTTeam" action="{!CreateLeadAndAssign}"-->
+    <apex:includeScript value="/soap/ajax/36.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/36.0/apex.js"/>
+    <apex:includeScript value="/support/console/28.0/integration.js"/>
+    <script>
+        sforce.connection.sessionId = "{!$Api.Session_ID}";
+        var csId = '{!Case.id}';
+        var status = '{!Case.Status}';
+        var Company = '{!Case.Company__c}';
+        var ProspectInteresrtType = '{!Case.Prospect_Interest_Type__c}';
+        var Industry = '{!Case.Industry__c}';
+        var pincode = '{!Case.Pin_code__c}';
+        var noOfEmp = '{!Case.No_of_Employees__c}';
+        var phone = '{!Case.Phone__c}';
+        var street = `{!Case.Street__c}`;   
+        street = street.replace(/(?:\r\n|\r|\n)/g, ' ');   
+        //alert('In script',csId);
+        /*if(status == 'Closed'){
+            alert('Case is already closed!');
+        }*/
+        if(Company == '' || ProspectInteresrtType == '' || Industry == '' || pincode == '' || noOfEmp == '' || phone == '' || street == ''){
+            alert('Company, Prospect Interest Type, Industry, Pin code , Number of employees, phone and street should be filled before assigning to IST member.');
+            gotoCase(); 
+        }
+       else{
+        sforce.apex.execute("AssignToCreateLeadForISTTeam","CreateLeadAndAssign",{caseId : csId}); 
+        alert('Lead created for IST team successfully!');
+        gotoCase(); 
+           }
+        
+        function gotoCase(){
+            if( (typeof sforce != 'undefined') && sforce && (!!sforce.one) )
+                 sforce.one.back(true);
+            else
+                 window.history.back();
+        }    
+    </script>
+</apex:page>

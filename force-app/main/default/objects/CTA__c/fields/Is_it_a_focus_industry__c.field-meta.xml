@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_it_a_focus_industry__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is it a focus industry and has definitive possibility of LOCTITE applications</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is it a focus industry and has definitive possibility of LOCTITE applications</inlineHelpText>
+    <label>Is it a focus industry</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

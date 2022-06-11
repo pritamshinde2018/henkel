@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_CTAs_to_be_qualified_by_IST_JK</fullName>
+    <columns>NAME</columns>
+    <columns>Date_From_Final_CTA_Created_Date__c</columns>
+    <columns>Lead_Created_Date__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Lead__c</columns>
+    <columns>CTA_stage__c</columns>
+    <columns>Lead_Status__c</columns>
+    <columns>CC_Status__c</columns>
+    <columns>Rating_Custom__c</columns>
+    <columns>Rating_IMG__c</columns>
+    <columns>Pincode__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Research_Inputs_New__c</columns>
+    <columns>Pardot_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CTA_stage__c</field>
+        <operation>equals</operation>
+        <value>Assigned to IST</value>
+    </filters>
+    <filters>
+        <field>Test_P__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Jayaprakash</value>
+    </filters>
+    <label>All CTAs to be qualified by IST - JK</label>
+</ListView>

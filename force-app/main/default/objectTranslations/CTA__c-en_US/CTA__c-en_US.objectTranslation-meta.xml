@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CTA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CTAs</value>
+    </caseValues>
+    <layouts>
+        <layout>Abandoned Cart</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evolution Of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CTA Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Us</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customized Price</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Facebook Enquiry</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>GM Design Guide</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Get A Demo</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Indiamart</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Live webinars (Marketing team)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mail enquiry</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Masterclass</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Newsletter subscription</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quotation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refer A Friend</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Request callback</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sampling</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sampling And Shipment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TradeIndia</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Website Registration</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eCommerce</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Level Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>New_Opportunity</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Abandoned_Cart</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Contact_Us</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Customized_Price</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Facebook_Enquiry</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>GM_Design_Guide</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Get_A_Demo</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Indiamart</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Live_webinars</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Mail_enquiry</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Masterclass</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Newsletter_subscription</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Quotation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Refer_A_Friend</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Request_Callback</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Sampling</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TradeIndia</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Web_Enquiry</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Website_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>eCommerce</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Back_Movement_of_CTA_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CTA_Follow_Up_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CTA_Status_is_Nurturing_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CTA_Status_is_unqualified_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Data_validation_for_ecom</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Ecom_order_to_restrict_CTA_Stage_Move</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Enquiry_Status_Not_Empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Intends_to_speak_to_IST_at_a_later_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Intent_Validation_For_IST</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Project_fields_to_be_filled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Manually_To_Additional_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Restrict_Manually_assigned_to_ist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>eCommerce_qualification_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>eCommerce_qualification_Validation_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>stage_change_contact_us_carrier</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Forecast</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity layout - Internal</layout>
+        <sections>
+            <label></label>
+            <section>Annualized value estimation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Center Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Care Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evaluation of High Potential Leads</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Project Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Indiamart Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inside Sales Team Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>MQL TO SQL</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Project Type</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualification Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – End customer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Research inputs – traders</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sample Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity layout - community</layout>
+        <sections>
+            <label></label>
+            <section>Call Centre Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Project Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inside Sales Team Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualification Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sample Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <workflowTasks>
+        <description></description>
+        <name>Assist_Customer_with_Trial</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Conducted_Seminar</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Confirm_Order_With_Customer</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Follow_Up_For_More_Business</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Perform_Alternate_Trial</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Qualify_Sample</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Sample_Feedback</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

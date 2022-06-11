@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_for_Order_Delivered</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  Order_Delivered__c = TRUE,  ISBLANK( Order_Deliver_Date__c ) )</errorConditionFormula>
+    <errorMessage>Please fill the Order Delivery Date.</errorMessage>
+</ValidationRule>

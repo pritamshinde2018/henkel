@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_status__c</fullName>
+    <externalId>false</externalId>
+    <label>Enquiry status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>qualified</fullName>
+                <default>false</default>
+                <label>qualified</label>
+            </value>
+            <value>
+                <fullName>Callback2</fullName>
+                <default>false</default>
+                <label>Callback2</label>
+            </value>
+            <value>
+                <fullName>Callback1</fullName>
+                <default>false</default>
+                <label>Callback1</label>
+            </value>
+            <value>
+                <fullName>No requirement</fullName>
+                <default>false</default>
+                <label>No requirement</label>
+            </value>
+            <value>
+                <fullName>Noco</fullName>
+                <default>false</default>
+                <label>Noco</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

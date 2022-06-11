@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eCommerce_qualification_Validation_rule</fullName>
+    <active>true</active>
+    <description>or selecting any of the other options (one time eCommerce, more value, more value + additional opp., additional opp.) the following fields should be filled in –
+Research inputs new
+New/Existing</description>
+    <errorConditionFormula>((TEXT(Ecoomerce_Qualification__c )!= &apos;Need follow-up&apos;) &amp;&amp; (TEXT(Ecoomerce_Qualification__c )!= &apos;Speak to IST&apos;) &amp;&amp; 
+(TEXT(Ecoomerce_Qualification__c )!= &apos;Does not want to speak to IST&apos;) &amp;&amp;  Import_throught_dataloader__c==false &amp;&amp; (ISBLANK(TEXT( Ecoomerce_Qualification__c )) =False ) &amp;&amp;
+ ( (ISBLANK( Research_Inputs_New__c )=True ) || ISBLANK(TEXT( New_Existing__c ))=True))</errorConditionFormula>
+    <errorMessage>Please fill Reserch Inputs and New/Existing to change Ecommerce Qualification to One time eCommerce||More value for the same products||Additional opportunity||More value for the same products + Additional opportunity</errorMessage>
+</ValidationRule>

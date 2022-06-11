@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indiamart_QTYPE__c</fullName>
+    <externalId>false</externalId>
+    <label>Indiamart Lead Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contact Suppliers</fullName>
+                <default>false</default>
+                <label>Contact Suppliers</label>
+            </value>
+            <value>
+                <fullName>PNS</fullName>
+                <default>false</default>
+                <label>PNS</label>
+            </value>
+            <value>
+                <fullName>Buy Leads</fullName>
+                <default>false</default>
+                <label>Buy Leads</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

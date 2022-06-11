@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IM_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of lead</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>More information on products</fullName>
+                <default>false</default>
+                <label>More information on products</label>
+            </value>
+            <value>
+                <fullName>Intent to buy</fullName>
+                <default>false</default>
+                <label>Intent to buy</label>
+            </value>
+            <value>
+                <fullName>Sample Requested</fullName>
+                <default>false</default>
+                <label>Sample Requested</label>
+            </value>
+            <value>
+                <fullName>Not able to contact</fullName>
+                <default>false</default>
+                <label>Not able to contact</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

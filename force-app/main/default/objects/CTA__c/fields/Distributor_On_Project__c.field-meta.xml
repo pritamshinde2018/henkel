@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distributor_On_Project__c</fullName>
+    <externalId>false</externalId>
+    <label>Distributor On Project</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AAD Marketing Engineers Private Ltd(Distributor)</fullName>
+                <default>false</default>
+                <label>AAD Marketing Engineers Private Ltd(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Abhijeet Auto Components Pvt. ltd</fullName>
+                <default>false</default>
+                <label>Abhijeet Auto Components Pvt. ltd</label>
+            </value>
+            <value>
+                <fullName>AKB Industries</fullName>
+                <default>false</default>
+                <label>AKB Industries</label>
+            </value>
+            <value>
+                <fullName>APM Technosales</fullName>
+                <default>false</default>
+                <label>APM Technosales</label>
+            </value>
+            <value>
+                <fullName>Aqua Engineering Cochin</fullName>
+                <default>false</default>
+                <label>Aqua Engineering Cochin</label>
+            </value>
+            <value>
+                <fullName>Aqua Engineering Services - Bangalore(Distributor)</fullName>
+                <default>false</default>
+                <label>Aqua Engineering Services - Bangalore(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Arihant Enterprises Indore</fullName>
+                <default>false</default>
+                <label>Arihant Enterprises Indore</label>
+            </value>
+            <value>
+                <fullName>AS Multisales</fullName>
+                <default>false</default>
+                <label>AS Multisales</label>
+            </value>
+            <value>
+                <fullName>Automotive Solution</fullName>
+                <default>false</default>
+                <label>Automotive Solution</label>
+            </value>
+            <value>
+                <fullName>Automotive Solutions Indore</fullName>
+                <default>false</default>
+                <label>Automotive Solutions Indore</label>
+            </value>
+            <value>
+                <fullName>Bala Agencies</fullName>
+                <default>false</default>
+                <label>Bala Agencies</label>
+            </value>
+            <value>
+                <fullName>Bhandari Techno Trade</fullName>
+                <default>false</default>
+                <label>Bhandari Techno Trade</label>
+            </value>
+            <value>
+                <fullName>Bison Industrial Hub</fullName>
+                <default>false</default>
+                <label>Bison Industrial Hub</label>
+            </value>
+            <value>
+                <fullName>Blackstone Diesel Jodhpur</fullName>
+                <default>false</default>
+                <label>Blackstone Diesel Jodhpur</label>
+            </value>
+            <value>
+                <fullName>CAP Enterprise</fullName>
+                <default>false</default>
+                <label>CAP Enterprise</label>
+            </value>
+            <value>
+                <fullName>Chitrakut Auto Colours</fullName>
+                <default>false</default>
+                <label>Chitrakut Auto Colours</label>
+            </value>
+            <value>
+                <fullName>CM Corporation</fullName>
+                <default>false</default>
+                <label>CM Corporation</label>
+            </value>
+            <value>
+                <fullName>Compac Technologies India Ltd-LUD(Distributor)</fullName>
+                <default>false</default>
+                <label>Compac Technologies India Ltd-LUD(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Darbarilal &amp; Sons</fullName>
+                <default>false</default>
+                <label>Darbarilal &amp; Sons</label>
+            </value>
+            <value>
+                <fullName>Dawn Enterprises</fullName>
+                <default>false</default>
+                <label>Dawn Enterprises</label>
+            </value>
+            <value>
+                <fullName>Deepak Automobiles</fullName>
+                <default>false</default>
+                <label>Deepak Automobiles</label>
+            </value>
+            <value>
+                <fullName>Devi Enterprises</fullName>
+                <default>false</default>
+                <label>Devi Enterprises</label>
+            </value>
+            <value>
+                <fullName>Dynamic Engineers</fullName>
+                <default>false</default>
+                <label>Dynamic Engineers</label>
+            </value>
+            <value>
+                <fullName>Elegant Enterprises</fullName>
+                <default>false</default>
+                <label>Elegant Enterprises</label>
+            </value>
+            <value>
+                <fullName>Etech Appliances Ankleshwar</fullName>
+                <default>false</default>
+                <label>Etech Appliances Ankleshwar</label>
+            </value>
+            <value>
+                <fullName>Ethertech Solutions</fullName>
+                <default>false</default>
+                <label>Ethertech Solutions</label>
+            </value>
+            <value>
+                <fullName>FRV Associates</fullName>
+                <default>false</default>
+                <label>FRV Associates</label>
+            </value>
+            <value>
+                <fullName>G A Engineers</fullName>
+                <default>false</default>
+                <label>G A Engineers</label>
+            </value>
+            <value>
+                <fullName>Gurukripa</fullName>
+                <default>false</default>
+                <label>Gurukripa</label>
+            </value>
+            <value>
+                <fullName>Henkel India(Distributor)</fullName>
+                <default>false</default>
+                <label>Henkel India(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Himanshu Enterprises Bhopal</fullName>
+                <default>false</default>
+                <label>Himanshu Enterprises Bhopal</label>
+            </value>
+            <value>
+                <fullName>HiTech Adhesives(Distributor)</fullName>
+                <default>false</default>
+                <label>HiTech Adhesives(Distributor)</label>
+            </value>
+            <value>
+                <fullName>IES Kota</fullName>
+                <default>false</default>
+                <label>IES Kota</label>
+            </value>
+            <value>
+                <fullName>Industrial Agencies(Kolhapur)(Distributor)</fullName>
+                <default>false</default>
+                <label>Industrial Agencies(Kolhapur)(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Industrial Solutions</fullName>
+                <default>false</default>
+                <label>Industrial Solutions</label>
+            </value>
+            <value>
+                <fullName>Industrial Solutions-Mumbai</fullName>
+                <default>false</default>
+                <label>Industrial Solutions-Mumbai</label>
+            </value>
+            <value>
+                <fullName>Innovative Engineering Ahmedabad</fullName>
+                <default>false</default>
+                <label>Innovative Engineering Ahmedabad</label>
+            </value>
+            <value>
+                <fullName>Innovative Engineering Rajkot</fullName>
+                <default>false</default>
+                <label>Innovative Engineering Rajkot</label>
+            </value>
+            <value>
+                <fullName>JAY KAY</fullName>
+                <default>false</default>
+                <label>JAY KAY</label>
+            </value>
+            <value>
+                <fullName>Khushi Enterprise</fullName>
+                <default>false</default>
+                <label>Khushi Enterprise</label>
+            </value>
+            <value>
+                <fullName>Krishna Enterprises</fullName>
+                <default>false</default>
+                <label>Krishna Enterprises</label>
+            </value>
+            <value>
+                <fullName>Metalcare Mumbai</fullName>
+                <default>false</default>
+                <label>Metalcare Mumbai</label>
+            </value>
+            <value>
+                <fullName>Micro Enterprises</fullName>
+                <default>false</default>
+                <label>Micro Enterprises</label>
+            </value>
+            <value>
+                <fullName>M P Brothers</fullName>
+                <default>false</default>
+                <label>M P Brothers</label>
+            </value>
+            <value>
+                <fullName>Multiweld</fullName>
+                <default>false</default>
+                <label>Multiweld</label>
+            </value>
+            <value>
+                <fullName>N.H. Associates</fullName>
+                <default>false</default>
+                <label>N.H. Associates</label>
+            </value>
+            <value>
+                <fullName>Namic industrial Solutions</fullName>
+                <default>false</default>
+                <label>Namic industrial Solutions</label>
+            </value>
+            <value>
+                <fullName>Nanostuffs(Distributor)</fullName>
+                <default>false</default>
+                <label>Nanostuffs(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Neptune Automotive</fullName>
+                <default>false</default>
+                <label>Neptune Automotive</label>
+            </value>
+            <value>
+                <fullName>New Tech Engineers</fullName>
+                <default>false</default>
+                <label>New Tech Engineers</label>
+            </value>
+            <value>
+                <fullName>Nikhil Shah &amp; Assoc</fullName>
+                <default>false</default>
+                <label>Nikhil Shah &amp; Assoc</label>
+            </value>
+            <value>
+                <fullName>Nilesh Sales Agencies(Distributor)</fullName>
+                <default>false</default>
+                <label>Nilesh Sales Agencies(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Nitin Agencies</fullName>
+                <default>false</default>
+                <label>Nitin Agencies</label>
+            </value>
+            <value>
+                <fullName>PD Enterprises Ahmedabad</fullName>
+                <default>false</default>
+                <label>PD Enterprises Ahmedabad</label>
+            </value>
+            <value>
+                <fullName>Perfect Sales Electronics</fullName>
+                <default>false</default>
+                <label>Perfect Sales Electronics</label>
+            </value>
+            <value>
+                <fullName>PJ Enterprises Vadodara</fullName>
+                <default>false</default>
+                <label>PJ Enterprises Vadodara</label>
+            </value>
+            <value>
+                <fullName>Pooja Agencies</fullName>
+                <default>false</default>
+                <label>Pooja Agencies</label>
+            </value>
+            <value>
+                <fullName>Popatlal &amp; Company</fullName>
+                <default>false</default>
+                <label>Popatlal &amp; Company</label>
+            </value>
+            <value>
+                <fullName>PP Trading company Gwalior</fullName>
+                <default>false</default>
+                <label>PP Trading company Gwalior</label>
+            </value>
+            <value>
+                <fullName>Pradeep enterprises</fullName>
+                <default>false</default>
+                <label>Pradeep enterprises</label>
+            </value>
+            <value>
+                <fullName>Prosol</fullName>
+                <default>false</default>
+                <label>Prosol</label>
+            </value>
+            <value>
+                <fullName>QSRS</fullName>
+                <default>false</default>
+                <label>QSRS</label>
+            </value>
+            <value>
+                <fullName>Raghvendra chem</fullName>
+                <default>false</default>
+                <label>Raghvendra chem</label>
+            </value>
+            <value>
+                <fullName>Rahul Agencies</fullName>
+                <default>false</default>
+                <label>Rahul Agencies</label>
+            </value>
+            <value>
+                <fullName>Rajput Enterprises</fullName>
+                <default>false</default>
+                <label>Rajput Enterprises</label>
+            </value>
+            <value>
+                <fullName>RAS Ind Solns</fullName>
+                <default>false</default>
+                <label>RAS Ind Solns</label>
+            </value>
+            <value>
+                <fullName>Relsol(Distributor)</fullName>
+                <default>false</default>
+                <label>Relsol(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Rubberwing(Distributor)</fullName>
+                <default>false</default>
+                <label>Rubberwing(Distributor)</label>
+            </value>
+            <value>
+                <fullName>S.P.Traders</fullName>
+                <default>false</default>
+                <label>S.P.Traders</label>
+            </value>
+            <value>
+                <fullName>Samit Sales Pvt. Ltd.(Distributor)</fullName>
+                <default>false</default>
+                <label>Samit Sales Pvt. Ltd.(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Saroj Enterprises(Distributor)</fullName>
+                <default>false</default>
+                <label>Saroj Enterprises(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Sar Tech Solutions Pvt Ltd- Noida(Distributor)</fullName>
+                <default>false</default>
+                <label>Sar Tech Solutions Pvt Ltd- Noida(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Sarthak Sales</fullName>
+                <default>false</default>
+                <label>Sarthak Sales</label>
+            </value>
+            <value>
+                <fullName>Sellex Incorp</fullName>
+                <default>false</default>
+                <label>Sellex Incorp</label>
+            </value>
+            <value>
+                <fullName>Selwel Enterprises (P) LTD(Distributor)</fullName>
+                <default>false</default>
+                <label>Selwel Enterprises (P) LTD(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Selwel Marketing Services(Nashik)(Distributor)</fullName>
+                <default>false</default>
+                <label>Selwel Marketing Services(Nashik)(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Shaildeep Enterprises Rajkot</fullName>
+                <default>false</default>
+                <label>Shaildeep Enterprises Rajkot</label>
+            </value>
+            <value>
+                <fullName>Shil Technologies Vadodara</fullName>
+                <default>false</default>
+                <label>Shil Technologies Vadodara</label>
+            </value>
+            <value>
+                <fullName>Shree Shyam Agencies</fullName>
+                <default>false</default>
+                <label>Shree Shyam Agencies</label>
+            </value>
+            <value>
+                <fullName>Shri Mahaluxmi Chemicals</fullName>
+                <default>false</default>
+                <label>Shri Mahaluxmi Chemicals</label>
+            </value>
+            <value>
+                <fullName>Shriram Traders Satna</fullName>
+                <default>false</default>
+                <label>Shriram Traders Satna</label>
+            </value>
+            <value>
+                <fullName>Shubham Industrial Marketing(Distributor)</fullName>
+                <default>false</default>
+                <label>Shubham Industrial Marketing(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Siddharth Trading Co.(Distributor)</fullName>
+                <default>false</default>
+                <label>Siddharth Trading Co.(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Skytec Solutions(Distributor)</fullName>
+                <default>false</default>
+                <label>Skytec Solutions(Distributor)</label>
+            </value>
+            <value>
+                <fullName>S M Technosales P Ltd-Delhi(Distributor)</fullName>
+                <default>false</default>
+                <label>S M Technosales P Ltd-Delhi(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Sneh Sales Corp</fullName>
+                <default>false</default>
+                <label>Sneh Sales Corp</label>
+            </value>
+            <value>
+                <fullName>Srihari Enterprises</fullName>
+                <default>false</default>
+                <label>Srihari Enterprises</label>
+            </value>
+            <value>
+                <fullName>Sri Marshal Enterprises</fullName>
+                <default>false</default>
+                <label>Sri Marshal Enterprises</label>
+            </value>
+            <value>
+                <fullName>Srinivasa - Trichy</fullName>
+                <default>false</default>
+                <label>Srinivasa - Trichy</label>
+            </value>
+            <value>
+                <fullName>Starlite Engineering Co.</fullName>
+                <default>false</default>
+                <label>Starlite Engineering Co.</label>
+            </value>
+            <value>
+                <fullName>Suman Enterprises</fullName>
+                <default>false</default>
+                <label>Suman Enterprises</label>
+            </value>
+            <value>
+                <fullName>Sunchem Marketing</fullName>
+                <default>false</default>
+                <label>Sunchem Marketing</label>
+            </value>
+            <value>
+                <fullName>Swaraj corporation</fullName>
+                <default>false</default>
+                <label>Swaraj corporation</label>
+            </value>
+            <value>
+                <fullName>Technovative Industrial</fullName>
+                <default>false</default>
+                <label>Technovative Industrial</label>
+            </value>
+            <value>
+                <fullName>Tech Tools Vadodara</fullName>
+                <default>false</default>
+                <label>Tech Tools Vadodara</label>
+            </value>
+            <value>
+                <fullName>Tesco Engineering(Distributor)</fullName>
+                <default>false</default>
+                <label>Tesco Engineering(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Trade Syndicate</fullName>
+                <default>false</default>
+                <label>Trade Syndicate</label>
+            </value>
+            <value>
+                <fullName>Trade Syndicate(Distributor)</fullName>
+                <default>false</default>
+                <label>Trade Syndicate(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Tuli Trade Private Limited</fullName>
+                <default>false</default>
+                <label>Tuli Trade Private Limited</label>
+            </value>
+            <value>
+                <fullName>Uni Sales India Ahmedabad</fullName>
+                <default>false</default>
+                <label>Uni Sales India Ahmedabad</label>
+            </value>
+            <value>
+                <fullName>Uni Trade India</fullName>
+                <default>false</default>
+                <label>Uni Trade India</label>
+            </value>
+            <value>
+                <fullName>Vapi Techno Traders(Distributor)</fullName>
+                <default>false</default>
+                <label>Vapi Techno Traders(Distributor)</label>
+            </value>
+            <value>
+                <fullName>Vijayasree Agencies</fullName>
+                <default>false</default>
+                <label>Vijayasree Agencies</label>
+            </value>
+            <value>
+                <fullName>Vision Industrial Hub</fullName>
+                <default>false</default>
+                <label>Vision Industrial Hub</label>
+            </value>
+            <value>
+                <fullName>YAAL Enterprises</fullName>
+                <default>false</default>
+                <label>YAAL Enterprises</label>
+            </value>
+            <value>
+                <fullName>Yash Auto Wheels</fullName>
+                <default>false</default>
+                <label>Yash Auto Wheels</label>
+            </value>
+            <value>
+                <fullName>Techno Weld</fullName>
+                <default>false</default>
+                <label>Techno Weld</label>
+            </value>
+            <value>
+                <fullName>Everest Agencies</fullName>
+                <default>false</default>
+                <label>Everest Agencies</label>
+            </value>
+            <value>
+                <fullName>Frontline Marketing Bangalore</fullName>
+                <default>false</default>
+                <label>Frontline Marketing Bangalore</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

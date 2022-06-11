@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating_IMG__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Rating_Custom__c==&apos;Hot&apos;,IMAGE(&quot;/resource/1603896222000/Hot_Lead_IMG&quot;,&quot;Alt_IMG&quot;,20,50),
+IF(Rating_Custom__c==&apos;Warm&apos;,IMAGE(&quot;/resource/1603896559000/Warm_Lead_IMG&quot;,&quot;Alt_IMG&quot;,20,35),
+IF(Rating_Custom__c==&apos;Cold&apos;,IMAGE(&quot;/resource/1603894605000/Fire_Image&quot;,&quot;Alt_IMG&quot;,20,17),&apos;NA&apos;)))</formula>
+    <label>Rating_IMG</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

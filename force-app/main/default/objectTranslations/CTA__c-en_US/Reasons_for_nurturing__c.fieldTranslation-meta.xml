@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Reasons_for_nurturing__c</name>
+    <picklistValues>
+        <masterLabel>Not a decision maker</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not the right timing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Satisfied with current solution</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

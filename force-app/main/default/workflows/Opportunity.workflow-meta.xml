@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>IST_Notification_Place_an_order_request</fullName>
+        <ccEmails>ajinkya.wankhede@nanostuffs.com</ccEmails>
+        <ccEmails>agarwal.raashi@henkel.com</ccEmails>
+        <description>IST Notification :Place an order request</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_IST_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/IST_Notification_Place_an_order_request</template>
+    </alerts>
+    <alerts>
+        <fullName>IST_Notification_Speak_to_us</fullName>
+        <ccEmails>ajinkya.wankhede@nanostuffs.com</ccEmails>
+        <ccEmails>agarwal.raashi@henkel.com</ccEmails>
+        <description>IST Notification :Speak to us</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_IST_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/IST_Notification_Speak_to_us</template>
+    </alerts>
+    <alerts>
+        <fullName>Indiamart_Alert_IST</fullName>
+        <description>Indiamart_Alert_IST</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>IST_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Indiamart_IST</template>
+    </alerts>
+    <alerts>
+        <fullName>Intent_To_Buy_Alert</fullName>
+        <ccEmails>swati.chakole@henkel.com</ccEmails>
+        <description>Intent To Buy Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Indiamart_Intent_to_buy</template>
+    </alerts>
+    <alerts>
+        <fullName>Other_Technologies_Alert</fullName>
+        <ccEmails>swati.chakole@henkel.com</ccEmails>
+        <description>Other Technologies Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Indiamart_More_information_on_other_technologies</template>
+    </alerts>
+    <alerts>
+        <fullName>Retaining_Compound2</fullName>
+        <description>Retaining Compound2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template3_Retaining_Compound</template>
+    </alerts>
+    <alerts>
+        <fullName>Retaining_Compound_1</fullName>
+        <ccEmails>ajinkya.wankhede@nanostuffs.com</ccEmails>
+        <description>Retaining Compound 1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template2_Retaining_Compound</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Nuture_EmailTL1</fullName>
+        <description>Send Nuture EmailTL1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template2_ThreadLocker</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Nuture_Email_RL1</fullName>
+        <description>Send Nuture Email RL1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template2_Retaining_Compound</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Nuture_Email_RL2</fullName>
+        <description>Send Nuture Email RL2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template3_Retaining_Compound</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Nuture_Email_TL1</fullName>
+        <ccEmails>ajinkya.wankhede@nanostuffs.com</ccEmails>
+        <description>Send Nuture Email TL1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template2_ThreadLocker</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Nuture_Email_TL2</fullName>
+        <description>Send Nuture Email TL2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template3_ThreadLocker</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Nuture_Email_TS1</fullName>
+        <description>Send Nuture Email TS1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template2_Thread_Sealants</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Nuture_Email_TS2</fullName>
+        <description>Send Nuture Email TS2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template3_Thread_Sealants</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_for_delivery_Threadlocker</fullName>
+        <description>Step-5- Delivery email TL</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Step_4_Delivery_Threadlocker</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_to_warehouse_on_sample_request_creation</fullName>
+        <description>Send email to warehouse on sample request creation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>varun.sahay@henkel.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vikrant.kumar@digitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/EmailToWarehouseOnLeadCreation</template>
+    </alerts>
+    <alerts>
+        <fullName>Step_5_Delivery_email</fullName>
+        <description>Step-5- Delivery email RS</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Step_4_Delivery_Retaining_Compound</template>
+    </alerts>
+    <alerts>
+        <fullName>Step_5_Delivery_email_TS</fullName>
+        <description>Step-5- Delivery email TS</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Step4_Delivery_Thread_Sealant</template>
+    </alerts>
+    <alerts>
+        <fullName>Thread_Sealant</fullName>
+        <description>Thread Sealant</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template2_Thread_Sealants</template>
+    </alerts>
+    <alerts>
+        <fullName>Thread_Sealant2</fullName>
+        <description>Thread Sealant2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template3_Thread_Sealants</template>
+    </alerts>
+    <alerts>
+        <fullName>Threadlocker1</fullName>
+        <description>Threadlocker1</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template2_ThreadLocker</template>
+    </alerts>
+    <alerts>
+        <fullName>Threadlocker2</fullName>
+        <description>Threadlocker2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact2__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Case1_Step1_Template3_ThreadLocker</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Add_Ace_Lead_State_Date</fullName>
+        <field>Start_Date_ace_lead__c</field>
+        <formula>Today()</formula>
+        <name>Add Ace Lead State Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Add_Start_Date</fullName>
+        <field>Start_Date_ace__c</field>
+        <formula>Today()</formula>
+        <name>Add Start Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Project</fullName>
+        <field>OwnerId</field>
+        <lookupValue>agarwal.raashi@henkel.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Project</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Assign_Project1</fullName>
+        <field>OwnerId</field>
+        <lookupValue>agarwal.raashi@henkel.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign Project1</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_status_to_complete</fullName>
+        <field>Status__c</field>
+        <literalValue>Completed</literalValue>
+        <name>Change status to complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Distributor_Assigned</fullName>
+        <field>Distributor__c</field>
+        <literalValue>Henkel India</literalValue>
+        <name>Distributor Assigned</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Distributor_Assigned1</fullName>
+        <field>Distributor__c</field>
+        <literalValue>Henkel India</literalValue>
+        <name>Distributor Assigned1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ExpectedDate</fullName>
+        <field>CloseDate</field>
+        <formula>SampleReceivedOn__c + 60</formula>
+        <name>Expected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ExpectedDate_Update</fullName>
+        <description>Updating the Expected Close Date</description>
+        <field>CloseDate</field>
+        <formula>CreatedDate + 60</formula>
+        <name>ExpectedDate Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Increment_New_Status_Flag</fullName>
+        <field>Flag_New_Status__c</field>
+        <formula>Flag_New_Status__c + 1</formula>
+        <name>Increment New Status Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sample_Sent_On_Date_Update</fullName>
+        <field>Sample_Sent_On__c</field>
+        <formula>TODAY()</formula>
+        <name>Sample Sent On Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Assigned_IST</fullName>
+        <field>Assigned_IST_User__c</field>
+        <lookupValue>swathika.s@henkel.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Set Assigned IST</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateName</fullName>
+        <field>Name</field>
+        <formula>Name_Template__c</formula>
+        <name>UpdateName</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Start_Date_on_Projects</fullName>
+        <field>Start_Date_ace_lead__c</field>
+        <formula>Today()</formula>
+        <name>Update Lead Start Date on Projects</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <field>Status__c</field>
+        <literalValue>Completed</literalValue>
+        <name>Update Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_category_as_A</fullName>
+        <field>Category__c</field>
+        <literalValue>A</literalValue>
+        <name>Update category as A</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_category_to_B</fullName>
+        <field>Category__c</field>
+        <literalValue>B</literalValue>
+        <name>Update category to B</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_category_to_C</fullName>
+        <field>Category__c</field>
+        <literalValue>C</literalValue>
+        <name>Update category to C</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_stage_to_20</fullName>
+        <field>StageName</field>
+        <literalValue>Sample Received</literalValue>
+        <name>Update stage to 20</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_status_to_active</fullName>
+        <field>Status__c</field>
+        <literalValue>Active</literalValue>
+        <name>Update status to active</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Ace Lead Start Date on Project</fullName>
+        <actions>
+            <name>Add_Ace_Lead_State_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.To_be_discussed_with_TSE__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>based on to be discussed with tsc</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assign IST to Old Projects</fullName>
+        <actions>
+            <name>Set_Assigned_IST</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Assigned_IST_User__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Change status to complete</fullName>
+        <actions>
+            <name>Update_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Maintaining/Closing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Batch Production</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conduct a Seminar</fullName>
+        <actions>
+            <name>Conducted_Seminar</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Conduct_a_Seminar__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Create Assistance Task for Distributor</fullName>
+        <actions>
+            <name>Assist_Customer_with_Trial</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Customer_Needs_Assistance__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Create Task Qualification</fullName>
+        <actions>
+            <name>Qualify_Sample</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Create task Sample Feedback</fullName>
+        <actions>
+            <name>Sample_Feedback</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>ExpectedDate</fullName>
+        <actions>
+            <name>ExpectedDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>updating the Expected Close Date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Non Serviceable Projects Assigned to Rashi</fullName>
+        <actions>
+            <name>Assign_Project</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Distributor_Assigned</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Pincode_Status__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Waybill_No__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Sample_Sent_On__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Non Serviceable Projects Assigned to Rashi with Pincode 3</fullName>
+        <actions>
+            <name>Assign_Project1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Distributor_Assigned1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Pincode_Status__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Waybill_No__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Sample_Sent_On__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Opportunity name</fullName>
+        <actions>
+            <name>UpdateName</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Project status - active</fullName>
+        <actions>
+            <name>Increment_New_Status_Flag</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_status_to_active</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Flag_New_Status__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Delivery email For Retaining Compounds</fullName>
+        <actions>
+            <name>Step_5_Delivery_email</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Blue_Dart_Status__c</field>
+            <operation>equals</operation>
+            <value>SHIPMENT DELIVERED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Retaining Compound 648</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Email_Opt_Out__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Delivery email For Thread Sealents</fullName>
+        <actions>
+            <name>Step_5_Delivery_email_TS</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Blue_Dart_Status__c</field>
+            <operation>equals</operation>
+            <value>SHIPMENT DELIVERED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Thread Sealants 542</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Email_Opt_Out__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Delivery email For Threadlocker</fullName>
+        <actions>
+            <name>Send_email_for_delivery_Threadlocker</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Blue_Dart_Status__c</field>
+            <operation>equals</operation>
+            <value>SHIPMENT DELIVERED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Threadlocker 243</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Email to warehouse</fullName>
+        <actions>
+            <name>Send_email_to_warehouse_on_sample_request_creation</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Assigned_IST</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Prospect_Interest_Type__c</field>
+            <operation>equals</operation>
+            <value>Sample Requested</value>
+        </criteriaItems>
+        <description>Send email to warehouse for sample request.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Nurture Email-Retaining Compound</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Retaining Compound 648</value>
+        </criteriaItems>
+        <description>Retaining Compound</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Retaining_Compound_1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Retaining_Compound2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Nurture Email-RetainingCompound</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Retaining Compound 648</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Email_Opt_Out__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Retaining Compound</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Send_Nuture_Email_RL1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Send_Nuture_Email_RL2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>6</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Nurture Email-Thread Locker</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Threadlocker 243</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Email_Opt_Out__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>ThreadLocker</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Send_Nuture_EmailTL1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Send_Nuture_Email_TL2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>6</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Nurture Email-Thread Sealant</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Thread Sealants 542</value>
+        </criteriaItems>
+        <description>Thread Sealant</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Thread_Sealant</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Thread_Sealant2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Nurture Email-ThreadSealant</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Thread Sealants 542</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Email_Opt_Out__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Thread Sealant</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Send_Nuture_Email_TS1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Send_Nuture_Email_TS2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>6</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Nurture Email-Threadlocker</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Which_Product_Sent__c</field>
+            <operation>equals</operation>
+            <value>LOCTITE Threadlocker 243</value>
+        </criteriaItems>
+        <description>Threadlocker</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Threadlocker1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Threadlocker2</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>SendSampleSendEmail</fullName>
+        <active>false</active>
+        <formula>Owner.Contact.Owner.Profile.Name = &apos;Partner Community User - Custom&apos;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Stage Change to 20</fullName>
+        <actions>
+            <name>Update_stage_to_20</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SampleReceivedOn__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Sample Sent/Inquiry Received</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Trial Successful - Create Task for Distributor</fullName>
+        <actions>
+            <name>Confirm_Order_With_Customer</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Trial Successful &amp; Business Qualified</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Trial Successful - Follow Up Task for IST</fullName>
+        <actions>
+            <name>Follow_Up_For_More_Business</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>First order Supply</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Maintaining/Closing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecurringBusiness__c</field>
+            <operation>equals</operation>
+            <value>Recurring Business</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Trial Unsuccessful - Create Task for Distributor</fullName>
+        <actions>
+            <name>Perform_Alternate_Trial</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Alternate Trial Scheduled</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Category B if amount is 35000 INR to 74999 INR</fullName>
+        <actions>
+            <name>Update_category_to_B</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>35000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>lessOrEqual</operation>
+            <value>74999</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Category C if amount is 1 INR to 34999 INR</fullName>
+        <actions>
+            <name>Update_category_to_C</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>lessOrEqual</operation>
+            <value>34999</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Category when amount exceed 75k</fullName>
+        <actions>
+            <name>Update_category_as_A</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>greaterOrEqual</operation>
+            <value>75000</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Lead Start Date on Project</fullName>
+        <actions>
+            <name>Update_Lead_Start_Date_on_Projects</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.To_be_discussed_with_TSE__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>For Ace Lead State date based on the Date on which To be discussed with TSE was ticked</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Sent on date</fullName>
+        <actions>
+            <name>Sample_Sent_On_Date_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Waybill_No__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Assist_Customer_with_Trial</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>By Insider Sales Team: Assist Customer complete the trial at the customer site. Close the Task with your feedback once done.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Assistance_Due_Date__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Assist Customer with Trial</subject>
+    </tasks>
+    <tasks>
+        <fullName>Conducted_Seminar</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Assistance_Due_Date__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Conduct A Seminar</subject>
+    </tasks>
+    <tasks>
+        <fullName>Confirm_Order_With_Customer</fullName>
+        <assignedTo>Sales Manager</assignedTo>
+        <assignedToType>opportunityTeam</assignedToType>
+        <description>The trial is successful and the lead is willing to place an order. Please send quote and try fulfilling first order/one time order.</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Confirm Order With Customer</subject>
+    </tasks>
+    <tasks>
+        <fullName>Follow_Up_For_More_Business</fullName>
+        <assignedTo>Sales Manager</assignedTo>
+        <assignedToType>opportunityTeam</assignedToType>
+        <description>Follow up for the 2nd Order.</description>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Follow Up For More Business</subject>
+    </tasks>
+    <tasks>
+        <fullName>Perform_Alternate_Trial</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>By Inside Sales Team - The trial is not successful, please schedules an alternate trial with the customer onsite.</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Perform Alternate Trial</subject>
+    </tasks>
+    <tasks>
+        <fullName>Qualify_Sample</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Qualify Sampling</subject>
+    </tasks>
+    <tasks>
+        <fullName>Sample_Feedback</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.SampleReceivedOn__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Confirm Sample Received</subject>
+    </tasks>
+</Workflow>

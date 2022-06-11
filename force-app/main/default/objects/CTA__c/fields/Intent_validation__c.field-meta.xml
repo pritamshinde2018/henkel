@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intent_validation__c</fullName>
+    <description>intent validation at the stage data &amp; intent validation</description>
+    <externalId>false</externalId>
+    <label>Intent validation</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Callback1</fullName>
+                <default>false</default>
+                <label>Callback1</label>
+            </value>
+            <value>
+                <fullName>Callback2</fullName>
+                <default>false</default>
+                <label>Callback2</label>
+            </value>
+            <value>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+                <label>Not interested</label>
+            </value>
+            <value>
+                <fullName>Noco</fullName>
+                <default>false</default>
+                <label>Noco</label>
+            </value>
+            <value>
+                <fullName>Duplicate enquiry</fullName>
+                <default>false</default>
+                <label>Duplicate enquiry</label>
+            </value>
+            <value>
+                <fullName>Intends to speak to IST now</fullName>
+                <default>false</default>
+                <label>Intends to speak to IST now</label>
+            </value>
+            <value>
+                <fullName>Intends to speak to IST at a later date (date for speaking to IST)</fullName>
+                <default>false</default>
+                <label>Intends to speak to IST at a later date (date for speaking to IST)</label>
+            </value>
+            <value>
+                <fullName>Does not want to speak to IST</fullName>
+                <default>false</default>
+                <label>Does not want to speak to IST</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

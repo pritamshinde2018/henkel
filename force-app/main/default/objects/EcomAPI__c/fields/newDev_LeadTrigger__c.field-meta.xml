@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>newDev_LeadTrigger__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>For New Lead Trigger -2021</description>
+    <externalId>false</externalId>
+    <label>newDev_LeadTrigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

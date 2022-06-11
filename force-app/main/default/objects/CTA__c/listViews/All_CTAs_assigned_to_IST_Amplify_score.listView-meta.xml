@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_CTAs_assigned_to_IST_Amplify_score</fullName>
+    <booleanFilter>(1 AND 2 AND 6) OR (3 AND 4 AND 5)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Date_From_Final_CTA_Created_Date__c</columns>
+    <columns>Lead__c</columns>
+    <columns>Amplify_Lead_Score__c</columns>
+    <columns>CTA_stage__c</columns>
+    <columns>Lead_Status__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Pincode__c</columns>
+    <columns>Research_Inputs_New__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Number_Of_Employees__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CTA_stage__c</field>
+        <operation>equals</operation>
+        <value>Assigned to IST,Need Follow up</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>CTA__c.eCommerce</value>
+    </filters>
+    <filters>
+        <field>CTA_stage__c</field>
+        <operation>equals</operation>
+        <value>Qualified</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>CTA__c.eCommerce</value>
+    </filters>
+    <filters>
+        <field>Ecoomerce_Qualification__c</field>
+        <operation>notEqual</operation>
+        <value>One time eCommerce,More value for the same products,Additional opportunity,More value for the same products + Additional opportunity</value>
+    </filters>
+    <filters>
+        <field>Lead_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Qualified</value>
+    </filters>
+    <label>All CTAs assigned to IST - Amplify score</label>
+</ListView>

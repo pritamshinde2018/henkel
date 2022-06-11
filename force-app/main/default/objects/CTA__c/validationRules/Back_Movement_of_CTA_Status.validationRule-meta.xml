@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Back_Movement_of_CTA_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF((ISPICKVAL(PRIORVALUE(CTA_stage__c),&apos;Assigned to IST&apos;) &amp;&amp;   NOT(TEXT(Lead__r.Status)=&apos;Call Center Working&apos;)  ),IF(ISPICKVAL(CTA_stage__c ,&apos;New&apos;),true,false),
+
+IF(ISPICKVAL(PRIORVALUE(CTA_stage__c),&apos;Need Follow up&apos;), OR(ISPICKVAL(CTA_stage__c ,&apos;New&apos;),ISPICKVAL(CTA_stage__c ,&apos;Assigned to IST&apos;)),
+
+IF(ISPICKVAL(PRIORVALUE(CTA_stage__c),&apos;Nurturing&apos;),OR(ISPICKVAL(CTA_stage__c ,&apos;New&apos;),ISPICKVAL(CTA_stage__c ,&apos;Assigned to IST&apos;),ISPICKVAL(CTA_stage__c ,&apos;Need Follow up&apos;)),
+
+
+IF(ISPICKVAL(PRIORVALUE(CTA_stage__c),&apos;Qualified&apos;),OR(ISPICKVAL(CTA_stage__c ,&apos;New&apos;),ISPICKVAL(CTA_stage__c ,&apos;Assigned to IST&apos;),ISPICKVAL(CTA_stage__c ,&apos;Need Follow up&apos;),ISPICKVAL(CTA_stage__c ,&apos;Nurturing&apos;)),
+
+
+
+IF(ISPICKVAL(PRIORVALUE(CTA_stage__c),&apos;Closed abandoned cart&apos;),OR(ISPICKVAL(CTA_stage__c ,&apos;New&apos;),ISPICKVAL(CTA_stage__c ,&apos;Assigned to IST&apos;),ISPICKVAL(CTA_stage__c ,&apos;Need Follow up&apos;),ISPICKVAL(CTA_stage__c ,&apos;Nurturing&apos;),ISPICKVAL(CTA_stage__c ,&apos;Qualified&apos;)),false)
+)
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Application__c</errorDisplayField>
+    <errorMessage>You can&apos;t make back movement of CTA status.</errorMessage>
+</ValidationRule>

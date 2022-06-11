@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_status_completed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( PRIORVALUE( Stauts__c ) , &apos;Completed&apos;), ISCHANGED( Stauts__c ) )</errorConditionFormula>
+    <errorMessage>You cannot change status once it is completed.</errorMessage>
+</ValidationRule>

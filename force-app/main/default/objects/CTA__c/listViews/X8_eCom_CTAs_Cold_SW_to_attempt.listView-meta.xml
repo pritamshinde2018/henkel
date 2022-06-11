@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X8_eCom_CTAs_Cold_SW_to_attempt</fullName>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CTA_Created_Date__c</columns>
+    <columns>Lead_Name__c</columns>
+    <columns>Company__c</columns>
+    <columns>CTA_stage__c</columns>
+    <columns>Lead_Status__c</columns>
+    <columns>Lead_Created_Date__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Rating_Custom__c</columns>
+    <columns>Rating_IMG__c</columns>
+    <columns>Annualized_value_estimation__c</columns>
+    <columns>Lead_classification_basis_value__c</columns>
+    <columns>Pardot_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>CTA__c.eCommerce</value>
+    </filters>
+    <filters>
+        <field>Ecoomerce_Qualification__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Test_P__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Rating_Custom__c</field>
+        <operation>equals</operation>
+        <value>Cold</value>
+    </filters>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Swati</value>
+    </filters>
+    <label>8. eCom CTAs Cold - SW to attempt</label>
+</ListView>

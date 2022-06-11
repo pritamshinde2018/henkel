@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>CTA__c</entityName>
+    <fieldName>CTA_stage__c</fieldName>
+    <masterLabel>CTA path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Assigned to IST</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Data Collection Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <picklistValueName>Data and Intent Validation Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Lead__c</fieldNames>
+        <fieldNames>RecordTypeId</fieldNames>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Intent_validation__c</fieldNames>
+        <fieldNames>Intends_to_speak_to_IST_at_a_later_date__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_1__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_2__c</fieldNames>
+        <fieldNames>CTA_CC_Remarks_3__c</fieldNames>
+        <picklistValueName>Pre-sales nurturing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Project_Name__c</fieldNames>
+        <fieldNames>Expected_close_date__c</fieldNames>
+        <fieldNames>Market_Segment__c</fieldNames>
+        <fieldNames>decision_making_authority_in_the_organiz__c</fieldNames>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Unqualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

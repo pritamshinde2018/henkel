@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_are_the_applications_discussed__c</fullName>
+    <description>Research inputs – End customer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Research inputs – End customer</inlineHelpText>
+    <label>What are the applications discussed?</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,157 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName" access="global" 
+                            controller="applicationPotentialcontroller">
+    <aura:attribute name="sobjecttype" type="String" default="{!v.sObjectName}"/>
+    
+    <aura:attribute name="applicationPotentialObj" type="Object" ></aura:attribute>
+    <aura:attribute name="recordIDcustom" type="String" default="{!v.recordId}"></aura:attribute>
+    <aura:attribute name="estimatedAnnulized" type="integer" default="0"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    <lightning:card>
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body ">
+                    <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Application Potential" >
+                        <span class="slds-text-heading_small">Application Potential</span>
+                    </a>
+                </div>
+            </header>
+            
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="" style="height:200px;">
+                <div class="slds-scrollable_x"  style="height:100%;">
+                    <table class="slds-table slds-table_cell-buffer" border="1">
+                        <!--slds-table_col-bordered-->
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="TYPICAL DEVICES">TYPICAL DEVICES</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Cleaners" >Cleaners</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Functional Coatings">Functional Coatings</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Machinery Adhesives">Machinery Adhesives</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Instant Adhesives">Instant Adhesives</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Structural Bonding">Structural Bonding</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Sealing">Sealing</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Potting and Impregnation">Potting and Impregnation</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Protective Coatings">Protective Coatings</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="slds-hint-parent">
+                                <td scope="row" rowspan="2" style="">
+                                    <div class="slds-truncate"  title="">
+                                       {!v.applicationPotentialObj.TYPICAL_DEVICES}
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Cleaners}%
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Functional_Coatings}%
+                                    </div>
+                                </td>
+                                <td scope="row" style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Machinery_Adhesives}%
+                                    </div>
+                                </td>
+                                <td scope="row" style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Instant_Adhesives}%
+                                    </div>
+                                </td>
+                                <td scope="row" style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Structural_Bonding}%
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Sealing}%
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Potting_Impregnation}%
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.Protective_Coatings}%
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            
+                            <tr class="slds-hint-parent">
+                               
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valCleaners}
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valFunctional_Coatings}
+                                    </div>
+                                </td>
+                                <td scope="row" style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valMachinery_Adhesives}
+                                    </div>
+                                </td>
+                                <td scope="row" style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valInstant_Adhesives}
+                                    </div>
+                                </td>
+                                <td scope="row" style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valStructural_Bonding}
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valSealing}
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valPotting_Impregnation}
+                                    </div>
+                                </td>
+                                <td scope="row"  style="">
+                                    <div class="slds-truncate" title="">
+                                        {!v.applicationPotentialObj.valProtective_Coatings}
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </lightning:card>
+    
+</aura:component>

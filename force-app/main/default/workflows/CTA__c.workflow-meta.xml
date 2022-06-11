@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CTA_Reminder_to_IST</fullName>
+        <ccEmails>ajinkya.wankhede@nanostuffs.com</ccEmails>
+        <ccEmails>suvarna.mohite@henkel.com</ccEmails>
+        <ccEmails>abhisek.basu@henkel.com</ccEmails>
+        <ccEmails>hemant.majali@henkel.com</ccEmails>
+        <description>CTA Reminder to IST</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/CTA_Reminder_Mail_to_IST</template>
+    </alerts>
+    <alerts>
+        <fullName>Delivery_Email</fullName>
+        <description>Delivery Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Delivery_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Dispatch_Email</fullName>
+        <description>Dispatch Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Dispatch_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>IST_Email</fullName>
+        <description>IST Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Ist_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>missing_contact_details</fullName>
+        <description>missing contact details</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Missing_contact_details</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CTA_Assigned_to_IST_Date</fullName>
+        <description>Add Now() to CTA Assigned to IST Date field</description>
+        <field>CTA_Assigned_to_IST_Date__c</field>
+        <formula>Now()</formula>
+        <name>CTA Assigned to IST Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Ecommerce_Qualification_Change_Date</fullName>
+        <field>Last_eCommerce_qualification_Change_Date__c</field>
+        <formula>Now()</formula>
+        <name>Last Ecommerce Qualification Change Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mail_Enquiry_Reminder_Date</fullName>
+        <field>Mail_Enquiry_Reminder_Date__c</field>
+        <formula>CreatedDate + 1</formula>
+        <name>Mail Enquiry Reminder Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mail_Enquiry_Reminder_Date2</fullName>
+        <field>Mail_Enquiry_Reminder_Date__c</field>
+        <formula>CreatedDate + 1</formula>
+        <name>Mail Enquiry Reminder Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mail_Reminder_Date</fullName>
+        <field>Mail_Enquiry_Reminder_Date__c</field>
+        <formula>CreatedDate + 1</formula>
+        <name>Mail  Reminder Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Last_CTA_Status_Change_Date</fullName>
+        <field>Last_Status_Change_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Update Last CTA Status Change Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>CTA Assigned to IST Date</fullName>
+        <actions>
+            <name>CTA_Assigned_to_IST_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Add Last modified date when cta status is changed</description>
+        <formula>AND((ISCHANGED(CTA_stage__c ) || ISNEW() ),  TEXT(CTA_stage__c )==&apos;Assigned to IST&apos;, ISBLANK(CTA_Assigned_to_IST_Date__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Last Ecommerce Qualification Change Date</fullName>
+        <actions>
+            <name>Last_Ecommerce_Qualification_Change_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(Ecoomerce_Qualification__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Last Status Change Date</fullName>
+        <actions>
+            <name>Update_Last_CTA_Status_Change_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Upon Status change add the current date time on CTA</description>
+        <formula>ISCHANGED(CTA_stage__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Mail Enquiry Reminder Date</fullName>
+        <actions>
+            <name>Mail_Reminder_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(TEXT(CTA_stage__c)=&apos;Assigned to IST&apos;,RecordType.Name =&apos;Mail enquiry&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Mail_Enquiry_Reminder_Date2</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>CTA__c.CreatedDate</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

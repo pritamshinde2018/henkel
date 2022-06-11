@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CTA_Default_Distributor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CTA Default Distributor</shortDescription>
+        <value>0057F000003fjeI</value>
+    </labels>
+    <labels>
+        <fullName>CTA_Sampling_RecordTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CTA Sampling RecordTypeId</shortDescription>
+        <value>0127F000000BmTMQA0</value>
+    </labels>
+    <labels>
+        <fullName>Custom_Setting_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IndiamartCustom Setting ID</shortDescription>
+        <value>00e7F0000028zIS</value>
+    </labels>
+    <labels>
+        <fullName>Default_IST</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default IST</shortDescription>
+        <value>0057F0000011TdL</value>
+    </labels>
+    <labels>
+        <fullName>Exclude_IST_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exclude IST Member</shortDescription>
+        <value>0057F000004E7ZGQA0</value>
+    </labels>
+    <labels>
+        <fullName>GLUSR_MOBILE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GLUSR_MOBILE</shortDescription>
+        <value>9811458614</value>
+    </labels>
+    <labels>
+        <fullName>GLUSR_MOBILE_KEY</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GLUSR_MOBILE_KEY</shortDescription>
+        <value>ODMyOTM4MDUyNyM4NzQ2MTQz</value>
+    </labels>
+    <labels>
+        <fullName>IST_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IST Profile</shortDescription>
+        <value>00e7F000000ZrsV</value>
+    </labels>
+    <labels>
+        <fullName>IST_Profile_For_Abandoned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IST Profile For Abandoned</shortDescription>
+        <value>00e7F000000ZrsV</value>
+    </labels>
+    <labels>
+        <fullName>IST_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IST User ID</shortDescription>
+        <value>0057F000004E7ZB</value>
+    </labels>
+    <labels>
+        <fullName>Indiamart_EndDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indiamart_EndDate</shortDescription>
+        <value>27-05-202213:20:00</value>
+    </labels>
+    <labels>
+        <fullName>Indiamart_StartDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Indiamart_StartDate</shortDescription>
+        <value>27-05-202213:00:00</value>
+    </labels>
+    <labels>
+        <fullName>OrderConfirmationAPI</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrderConfirmationAPI</shortDescription>
+        <value>https://admin.tryloctite.in/api/v1/orders/</value>
+    </labels>
+    <labels>
+        <fullName>Pardot_Business_Unit_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pardot-Business-Unit-Id</shortDescription>
+        <value>0Uv7F000000KzhpSAC</value>
+    </labels>
+    <labels>
+        <fullName>Pardot_Client_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client_Id</shortDescription>
+        <value>3MVG9d8..z.hDcPL1YvMWWWFXj7X5yj67lt_QV2jJJvDrELHVdcTybrYm3_LQgsPyNZpysBlmen92eF0yqkIh</value>
+    </labels>
+    <labels>
+        <fullName>Pardot_Password</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pardot Password</shortDescription>
+        <value>M@rk@1234ngfZihumGYvqtNsAoh8r6auf</value>
+    </labels>
+    <labels>
+        <fullName>Pardot_UserKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pardot UserKey</shortDescription>
+        <value>891a87b298e28db2c1680e4e89a8be57</value>
+    </labels>
+    <labels>
+        <fullName>Pardot_Username</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pardot Username</shortDescription>
+        <value>shreya.soni@nanostuffs.com</value>
+    </labels>
+    <labels>
+        <fullName>Pardot_client_secret</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pardot client secret</shortDescription>
+        <value>18643F83B86BFB373C5EAB15CC312DEC64EC8A586DCCF7ECD261FFD42D7BF2A4</value>
+    </labels>
+    <labels>
+        <fullName>Quotation_Domain_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quotation Domain Link</shortDescription>
+        <value>https://www.tryloctite.in</value>
+    </labels>
+    <labels>
+        <fullName>Score_Value_to_convert_Lead</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Score Value  to convert Lead</shortDescription>
+        <value>75</value>
+    </labels>
+    <labels>
+        <fullName>Stage_10</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 10</shortDescription>
+        <value>Discussed with customer</value>
+    </labels>
+    <labels>
+        <fullName>Stage_100</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 100</shortDescription>
+        <value>Batch Production</value>
+    </labels>
+    <labels>
+        <fullName>Stage_15</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 15</shortDescription>
+        <value>Sample Sent/Inquiry Received</value>
+    </labels>
+    <labels>
+        <fullName>Stage_20</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 20</shortDescription>
+        <value>Sample Received</value>
+    </labels>
+    <labels>
+        <fullName>Stage_30</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 30</shortDescription>
+        <value>Test Initiated</value>
+    </labels>
+    <labels>
+        <fullName>Stage_45</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 45</shortDescription>
+        <value>Alternate Trial Scheduled</value>
+    </labels>
+    <labels>
+        <fullName>Stage_5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 5</shortDescription>
+        <value>Potential</value>
+    </labels>
+    <labels>
+        <fullName>Stage_60</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 60</shortDescription>
+        <value>Approved by customer</value>
+    </labels>
+    <labels>
+        <fullName>Stage_90</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 90</shortDescription>
+        <value>First delivery in purchase order</value>
+    </labels>
+    <labels>
+        <fullName>TaskError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TaskError</shortDescription>
+        <value>Can Not Create A New Record</value>
+    </labels>
+    <labels>
+        <fullName>Task_Delete_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task Delete Error Message</shortDescription>
+        <value>You can not delete the task</value>
+    </labels>
+    <labels>
+        <fullName>TradeIndia_Key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TradeIndia_Key</shortDescription>
+        <value>86d3fb08f59e6c0ed165f91975f216e6</value>
+    </labels>
+    <labels>
+        <fullName>TradeIndia_UserId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TradeIndia_UserId</shortDescription>
+        <value>16106515</value>
+    </labels>
+    <labels>
+        <fullName>TradeIndia_profile_id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TradeIndia_profile_id</shortDescription>
+        <value>34623129</value>
+    </labels>
+    <labels>
+        <fullName>trg_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>trg_Contact</shortDescription>
+        <value>false</value>
+    </labels>
+</CustomLabels>

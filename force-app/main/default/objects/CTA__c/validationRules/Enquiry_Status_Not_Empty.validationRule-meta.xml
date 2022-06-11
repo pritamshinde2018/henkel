@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Status_Not_Empty</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(Enquiry_status__c) &lt;&gt; NULL  &amp;&amp;  Enquiry_comments__c   = NULL</errorConditionFormula>
+    <errorMessage>Please fill Enquiry Comments  for adding Enquiry Status</errorMessage>
+</ValidationRule>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Update_Ace_Sales_Enginneer_Code_on_Project</name>
+        <label>Update Ace Sales Enginneer Code on Project</label>
+        <locationX>834</locationX>
+        <locationY>427</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Owner_Code__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Ace_Sales_Engineer_Records.Code__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Owner_Party_ID_Sales__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Ace_Sales_Engineer_Records.Lead_Owner_Code__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_for_Sales_Engineer_Code</name>
+        <label>Check for Sales Engineer Code</label>
+        <locationX>498</locationX>
+        <locationY>428</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Sales_Enginner_Code</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Ace_Sales_Engineer_Records.Code__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Ace_Sales_Engineer_Records.Lead_Owner_Code__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Ace_Sales_Enginneer_Code_on_Project</targetReference>
+            </connector>
+            <label>Check Sales Enginner Code</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Update Ace Sales Engineer Code {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Ace Sales Engineer Code</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Ace_Sales_Engineer_Records</name>
+        <label>Get Ace Sales Engineer Records</label>
+        <locationX>194</locationX>
+        <locationY>420</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_for_Sales_Engineer_Code</targetReference>
+        </connector>
+        <filters>
+            <field>Sales_Engineer_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Sales_Engineer1__c</elementReference>
+            </value>
+        </filters>
+        <object>Ace_Sales_Engineers_Code__c</object>
+    </recordLookups>
+    <startElementReference>Get_Ace_Sales_Engineer_Records</startElementReference>
+    <status>Active</status>
+</Flow>

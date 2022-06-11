@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canceled_Booked_Order_Other_Comments</fullName>
+    <active>true</active>
+    <errorConditionFormula>Payment_Status__c =&apos;booked&apos;  &amp;&amp;  ISPICKVAL( Not_interested__c , &apos;Others&apos;)  &amp;&amp;   Other_Comments_CC__c = NULL</errorConditionFormula>
+    <errorDisplayField>Other_Comments_CC__c</errorDisplayField>
+    <errorMessage>Please fill other comments for not interested dropdown value as Others</errorMessage>
+</ValidationRule>

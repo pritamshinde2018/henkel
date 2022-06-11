@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_for_nurturing__c</fullName>
+    <externalId>false</externalId>
+    <label>Reasons for nurturing</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Satisfied with current solution</fullName>
+                <default>false</default>
+                <label>Satisfied with current solution</label>
+            </value>
+            <value>
+                <fullName>Not the right timing</fullName>
+                <default>false</default>
+                <label>Not the right timing</label>
+            </value>
+            <value>
+                <fullName>Wrong contact person</fullName>
+                <default>false</default>
+                <label>Not a decision maker</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

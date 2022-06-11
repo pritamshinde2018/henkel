@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stage_change_contact_us_carrier</fullName>
+    <active>true</active>
+    <errorConditionFormula>( Type_of_Enquiry__c == &apos;careers&apos; &amp;&amp; Not(ISPICKVAL( CTA_stage__c ,  &apos;Disqualified by call center team&apos;)) &amp;&amp; ISCHANGED( CTA_stage__c ) )</errorConditionFormula>
+    <errorMessage>You Can not move enquiry type carrier to this stage.</errorMessage>
+</ValidationRule>

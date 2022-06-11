@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Update leads App by Call Center People</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Call Centre Lightning</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>IndiaMart_Leads</tabs>
+    <tabs>Call_Center_Leads</tabs>
+    <tabs>Webinar_Leads</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>E_commerce_Contacts</tabs>
+    <tabs>Plumbing_Lead</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

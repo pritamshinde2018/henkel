@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warm_demo_callback_quote_CTA_no_Amp_scor</fullName>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Date_From_Final_CTA_Created_Date__c</columns>
+    <columns>Lead__c</columns>
+    <columns>Amplify_Lead_Score__c</columns>
+    <columns>CTA_stage__c</columns>
+    <columns>Lead_Status__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Pincode__c</columns>
+    <columns>Research_Inputs_New__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Number_Of_Employees__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CTA_stage__c</field>
+        <operation>equals</operation>
+        <value>Assigned to IST,Need Follow up</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>CTA__c.Contact_Us,CTA__c.Customized_Price,CTA__c.Get_A_Demo,CTA__c.Quotation,CTA__c.Request_Callback</value>
+    </filters>
+    <filters>
+        <field>Amplify_Lead_Score__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Rating_Custom__c</field>
+        <operation>equals</operation>
+        <value>Warm</value>
+    </filters>
+    <filters>
+        <field>Test_P__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Warm demo/callback/quote CTA-no Amp scor</label>
+</ListView>

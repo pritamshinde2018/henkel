@@ -1,0 +1,133 @@
+<aura:component controller="EcommerceContacts" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="data" type="Object"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <aura:attribute name="AccountList" type="contact[]" description="store account records list"/>
+    <aura:attribute name="SerialNum" type="Integer" default="0"/>
+    <aura:attribute name="showSaveCancelBtn" type="boolean" default="false" description="flag for rendered save and cancel buttons in aura:if "/>
+    <aura:attribute name="PageNumber" type="integer" default="1"/>
+    <aura:attribute name="TotalPages" type="integer" default="0"/>
+    <aura:attribute name="TotalRecords" type="integer" default="0"/>
+    <aura:attribute name="RecordStart" type="integer" default="0"/>
+    <aura:attribute name="RecordEnd" type="integer" default="0"/>
+    <lightning:card>
+         <div class="slds-page-header">
+		<div class="slds-page-header__row">
+		<div class="slds-page-header__col-title">
+			<div class="slds-media">
+				<div class="slds-media__figure">
+					<lightning:icon iconName="action:call" alternativeText="call" title="call Center Contacts" />
+				</div>
+				<div class="slds-media__body">
+					<div class="slds-page-header__name">
+						<div class="slds-page-header__name-title ">
+							<h1>
+								<span class="slds-page-header__title slds-truncate" title="Call Center Contacts">Call Center Contacts</span>
+							</h1>
+                            <div class="slds-p-right_xxx-large ">
+                            <ui:inputSelect aura:id="pageSize" label="Display Records Per Page: " change="{!c.onSelectChange}">
+                                <ui:inputSelectOption text="10" label="10" value="true"/>
+                                <ui:inputSelectOption text="15" label="15"/>
+                                <ui:inputSelectOption text="20" label="20"/>
+                            </ui:inputSelect>
+            
+        </div>
+						</div>
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+</div>
+       	<div class="slds-m-around_x-small">
+        
+		
+    </div>
+    
+         <table align="center" class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Sr.No">Sr.No</div>
+                    </th>
+                     <th class="" scope="col">
+                        <div class="slds-truncate" title="Created Date">Created Date</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Name">Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Account Name">Account Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="CC Remark 1">CC Remark 1</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="CC Remark 2">CC Remark 2</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="CC Remark 3">CC Remark 3</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Phone">Phone</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Email">Email</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Industry">Industry</div>
+                    </th>
+                     <th class="" scope="col">
+                        <div class="slds-truncate" title="Employee">Employee</div>
+                    </th>
+                     <th class="" scope="col">
+                        <div class="slds-truncate" title="Employee">Role in organization</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="What is the Use/Purpose?">What is the Use/Purpose?</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="What Does the company Do?">What Does the company Do?</div>
+                    </th>
+                    <!--<th class="" scope="col">
+                        <div class="slds-truncate" title="Source">Source</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Reference Link">Reference Link</div>
+                    </th>-->
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.data}" var="item" indexVar="sNo1">
+                    <c:EcommerceContacts singleRec="{!item}"
+                                     showSaveCancelBtn="{!v.showSaveCancelBtn}"
+                                     sNo="{!sNo1 +1+v.SerialNum}" />
+                </aura:iteration>
+            </tbody>
+        </table>
+        
+        <div class="slds-clearfix">
+            <div class="slds-page-header" role="banner">
+                <div class="slds-float_Left">            
+                    <lightning:button disabled="{!v.PageNumber == 1}" variant="brand" aura:id="prevPage" label="Prev" onclick="{!c.handlePrev}" />            
+                    <lightning:button disabled="{!v.PageNumber == v.TotalPages}" aura:id="nextPage" variant="brand" label="Next" onclick="{!c.handleNext}"/>
+                </div>
+               <p class="slds-text-body_medium slds-p-top_xxx-small">{!v.RecordStart}-{!v.RecordEnd} of {!v.TotalRecords} | Page {!v.PageNumber} of {!v.TotalPages}</p>
+            </div>
+        </div>
+        
+        <div class="slds-align_absolute-center">
+            <aura:if isTrue="{!v.showSaveCancelBtn}">
+                <div class="slds-docked-form-footer">
+                    <lightning:buttonGroup class="slds-m-around_medium">
+                        <lightning:button label="Cancel" onclick="{!c.cancel}"/>
+                        <lightning:button label="Save" onclick="{!c.Save}" variant="success"/>
+                    </lightning:buttonGroup>
+                </div>
+            </aura:if>   
+        </div>
+        
+        
+    </lightning:card>
+	
+</aura:component>

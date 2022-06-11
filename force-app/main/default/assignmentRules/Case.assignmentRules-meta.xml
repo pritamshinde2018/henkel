@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assign to Try Loctite</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>varun.sahay@henkel.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.CaseNumber</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <template>unfiled$public/New_Case_Created</template>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Case Assignment for Service agents</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>zoheb.khan@vcaremail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Round_Robin_Id__c</field>
+                <operation>equals</operation>
+                <value>0</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>hitesh.kapoor@vcaremail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Round_Robin_Id__c</field>
+                <operation>equals</operation>
+                <value>1</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tulika.mukherjee@vcaremail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Round_Robin_Id__c</field>
+                <operation>equals</operation>
+                <value>2</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>yuvraj.p@vcaremail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Round_Robin_Id__c</field>
+                <operation>equals</operation>
+                <value>3</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

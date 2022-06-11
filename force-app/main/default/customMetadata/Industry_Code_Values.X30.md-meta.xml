@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>30</label>
+    <protected>false</protected>
+    <values>
+        <field>Code__c</field>
+        <value xsi:type="xsd:string">Misc</value>
+    </values>
+    <values>
+        <field>Focus_Segment_Priority__c</field>
+        <value xsi:type="xsd:string">25</value>
+    </values>
+    <values>
+        <field>Focus_Segment__c</field>
+        <value xsi:type="xsd:string">Other</value>
+    </values>
+    <values>
+        <field>Industry__c</field>
+        <value xsi:type="xsd:string">FMCG</value>
+    </values>
+    <values>
+        <field>Internal_Code__c</field>
+        <value xsi:type="xsd:string">Z9</value>
+    </values>
+</CustomMetadata>

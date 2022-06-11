@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validation_if_status_is_complete</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Stauts__c ,&apos;Completed&apos;) ,
+(ISBLANK( Amount_Collected_Date__c )  || 
+ISBLANK( Order_Deliver_Date__c )))</errorConditionFormula>
+    <errorMessage>Please fill Amount Collected Date and Order Delivery Date.</errorMessage>
+</ValidationRule>

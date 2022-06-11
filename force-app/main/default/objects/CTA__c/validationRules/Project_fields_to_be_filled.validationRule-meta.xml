@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_fields_to_be_filled</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( AND( ISPICKVAL( CTA_stage__c ,&apos;Qualified&apos;), Import_throught_dataloader__c==false),AND((ISBLANK( Application__c ) || (ISBLANK( Research_Inputs_New__c ) ) || (ISBLANK( TEXT( New_Existing__c ) ) ) || (ISBLANK( TEXT(Market_Segment__c) ) ) || (ISBLANK( TEXT( RecurringBusiness__c ) ) ) || (ISBLANK( Product_In_Ace_Project__c ) ) || (ISBLANK( Expected_close_date__c ) )), RecordType.Name !=&apos;eCommerce&apos;),false)</errorConditionFormula>
+    <errorMessage>Please fill New/Existing,Reserch Inputs,Application,Expected Close date,Product,Market Segment And Type of Business to qualify this CTA</errorMessage>
+</ValidationRule>

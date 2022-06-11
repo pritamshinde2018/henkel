@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Update_Role_in_Organisation_in_Contact</name>
+        <label>Update Role in Organisation in Contact</label>
+        <locationX>775</locationX>
+        <locationY>407</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Role_in_organisation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Department_And_Designation_Records.Role_in_the_organisation__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_if_the_records_are_not_empty</name>
+        <label>Check if the records are not empty</label>
+        <locationX>464</locationX>
+        <locationY>393</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_department_and_designation_records</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Department_And_Designation_Records.Role_in_the_organisation__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Role_in_Organisation_in_Contact</targetReference>
+            </connector>
+            <label>Check department and designation records</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Role in Organization basis Designation And Department {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Role in Organization basis Designation And Department</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Department_And_Designation_Records</name>
+        <label>Department And Designation Records</label>
+        <locationX>178</locationX>
+        <locationY>390</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_the_records_are_not_empty</targetReference>
+        </connector>
+        <filters>
+            <field>Department__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Department__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Designation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Designation__c</elementReference>
+            </value>
+        </filters>
+        <object>Department_And_Designation__c</object>
+    </recordLookups>
+    <startElementReference>Department_And_Designation_Records</startElementReference>
+    <status>Active</status>
+</Flow>

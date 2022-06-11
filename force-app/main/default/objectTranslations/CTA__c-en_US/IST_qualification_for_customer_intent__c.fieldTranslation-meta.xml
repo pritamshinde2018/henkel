@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>IST_qualification_for_customer_intent__c</name>
+    <picklistValues>
+        <masterLabel>Customer interested in a seminar (LMX/MRW/Plant audit)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer interested in a visit</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer is from a relevant company and is either a decision maker or influencer but is currently not showing much interest</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer is from a relevant company but neither decision maker nor influencer</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

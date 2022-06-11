@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>AutoResponder Mailer</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.CreatedDate</field>
+                <operation>equals</operation>
+                <value>TODAY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SuppliedEmail</field>
+                <operation>notEqual</operation>
+                <value>payment-report@payu.in</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>customer.enquiries@henkel.com</replyToEmail>
+            <senderEmail>mahima.srivastava@henkel.com</senderEmail>
+            <senderName>Customer Enquiries</senderName>
+            <template>Service_Email_Templetes/Autoresponder_Mail_For_Email_To_Case</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

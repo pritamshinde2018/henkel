@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eCom_CTA_s_TM_to_attempt</fullName>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Data_validation__c</columns>
+    <columns>CTA_CC_Remarks_1__c</columns>
+    <columns>CTA_CC_Remarks_2__c</columns>
+    <columns>CTA_CC_Remarks_3__c</columns>
+    <columns>Intent_validation__c</columns>
+    <columns>CC_Status__c</columns>
+    <columns>Ecoomerce_Qualification__c</columns>
+    <columns>High_Potential__c</columns>
+    <columns>Lead_Sr_No__c</columns>
+    <columns>Old_CTA_Owner_Updated__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OWNER.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Tulika</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>CTA__c.eCommerce</value>
+    </filters>
+    <filters>
+        <field>Test_P__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Order_Status__c</field>
+        <operation>equals</operation>
+        <value>delivered</value>
+    </filters>
+    <filters>
+        <field>Ecoomerce_Qualification__c</field>
+        <operation>notEqual</operation>
+        <value>One time eCommerce,More value for the same products,Additional opportunity,More value for the same products + Additional opportunity,Need follow-up,Speak to IST,Does not want to speak to IST</value>
+    </filters>
+    <filters>
+        <field>CC_Status__c</field>
+        <operation>notEqual</operation>
+        <value>noco</value>
+    </filters>
+    <filters>
+        <field>Old_CTA_Owner_Updated__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>9/17/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Test_P__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>eCom CTA&apos;s  - TM to attempt</label>
+</ListView>

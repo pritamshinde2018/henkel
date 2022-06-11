@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Facebook_Lead_Registration_Email</fullName>
+        <description>Facebook Lead  Registration Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Facebook_Confirm_Your_Registration</template>
+    </alerts>
+    <alerts>
+        <fullName>LinkedIn_Registration_Mail</fullName>
+        <description>LinkedIn Registration Mail</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/LinkedIn_Confirm_Your_Registration</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CC_STATUS</fullName>
+        <field>CC_Status__c</field>
+        <literalValue>callback1</literalValue>
+        <name>CC STATUS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CC_STATUS2</fullName>
+        <field>CC_Status__c</field>
+        <literalValue>callback2</literalValue>
+        <name>CC_STATUS2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CC_Status_to_NOCO</fullName>
+        <field>CC_Status__c</field>
+        <literalValue>noco</literalValue>
+        <name>CC Status to NOCO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Status_To_Callback1</fullName>
+        <field>CC_Status__c</field>
+        <literalValue>callback1</literalValue>
+        <name>Change Status To Callback1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Status_To_Callback2</fullName>
+        <field>CC_Status__c</field>
+        <literalValue>callback2</literalValue>
+        <name>Change Status To Callback2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Increment_Score_by_56</fullName>
+        <field>pi__score__c</field>
+        <formula>pi__score__c + 56</formula>
+        <name>Increment Score by 56</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Sample_Sent_On_Date_Update</fullName>
+        <field>Sample_Sent_On__c</field>
+        <formula>TODAY()</formula>
+        <name>Lead Sample Sent On Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_CC_Status_TO_MQL</fullName>
+        <field>CC_Status__c</field>
+        <literalValue>Data Validated</literalValue>
+        <name>Update CC Status TO MQL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Assigned_on</fullName>
+        <field>Lead_assigned_on__c</field>
+        <formula>Today()</formula>
+        <name>Update Lead Assigned on</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Status_Change_Date</fullName>
+        <field>Lead_Status_Change_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Lead Status Change Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Purpose_to_product_send</fullName>
+        <field>Which_Product_Sent__c</field>
+        <literalValue>Loctite 542</literalValue>
+        <name>Update Purpose to product send</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Call Center CC Status to MQL Automation</fullName>
+        <actions>
+            <name>Update_CC_Status_TO_MQL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(!ISBLANK(Street), !ISBLANK(State) , !ISBLANK(City), NOT(ISPICKVAL(Industry , &apos;&apos;)), NOT(ISPICKVAL( What_is_the_purpose_use__c ,&apos;&apos;)) ,NOT(ISPICKVAL( Number_of_Employees_Custom__c ,&apos;&apos;)),  NOT(ISPICKVAL( LeadSource , &apos;Indiamart&apos;)),  !ISBLANK( CC_Remarks_1__c ),!ISBLANK( CC_Remarks_2__c ),!ISBLANK( CC_Remarks_3__c ),NOT(ISPICKVAL( What_is_the_purpose_use__c ,&apos;Plumbing&apos;)) ,  Data_validation__c  = true )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CallBack 1 Automation</fullName>
+        <actions>
+            <name>Change_Status_To_Callback1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6  AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_2__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_3__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Source__c</field>
+            <operation>notEqual</operation>
+            <value>Indiamart</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>noco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not interested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Data Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Duplicate Lead</value>
+        </criteriaItems>
+        <description>Change CC Status to CallBack-1 for CC Remark 3 And Address Empty</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CallBack 1 Automation Indiamart</fullName>
+        <actions>
+            <name>CC_STATUS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6  AND 7 AND 8 AND 9</booleanFilter>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_2__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_3__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Indiamart_QTYPE__c</field>
+            <operation>equals</operation>
+            <value>Contact Suppliers,PNS,Buy Leads</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Prospect_Interest_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Sample Requested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>noco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not interested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Data Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Duplicate Lead</value>
+        </criteriaItems>
+        <description>Change CC Status to CallBack-1 for CC Remark 3 And Address Empty</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Callback2 Automation</fullName>
+        <actions>
+            <name>Change_Status_To_Callback2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6  AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_2__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_3__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Source__c</field>
+            <operation>notEqual</operation>
+            <value>Indiamart</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>noco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not interested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Data Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Duplicate Lead</value>
+        </criteriaItems>
+        <description>CCremarks 1 filled, CC remarks 2 &amp; 3 not filled, and address not filled – Change the status to ‘callback2’</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Callback2 Automation Indiamart</fullName>
+        <actions>
+            <name>CC_STATUS2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9</booleanFilter>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_2__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_3__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Indiamart_QTYPE__c</field>
+            <operation>equals</operation>
+            <value>Contact Suppliers,PNS,Buy Leads</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Prospect_Interest_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Sample Requested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>noco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not interested</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Data Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Duplicate Lead</value>
+        </criteriaItems>
+        <description>CCremarks 1 filled, CC remarks 2 &amp; 3 not filled, and address not filled – Change the status to ‘callback2’</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Change Status to NOCO</fullName>
+        <actions>
+            <name>CC_Status_to_NOCO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_2__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Remarks_3__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Street</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.State</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not interested</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Facebook Confirm Your Registration</fullName>
+        <actions>
+            <name>Facebook_Lead_Registration_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Facebook_Zapier</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Industry</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Prospect_Interest_Type__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Street</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Which_Product_Sent__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Status Change Date</fullName>
+        <actions>
+            <name>Update_Lead_Status_Change_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( Status )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead assigned on date updation</fullName>
+        <actions>
+            <name>Update_Lead_Assigned_on</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND (OR(Owner:User.Profile.Id = &apos;00e7F000000Zyaq&apos;, Owner:User.Profile.Id = &apos;00e7F000000ZrsV&apos;),  ISBLANK( Lead_assigned_on__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LinkedIn Confirm Your Registration</fullName>
+        <actions>
+            <name>LinkedIn_Registration_Mail</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Linkedin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Industry</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Prospect_Interest_Type__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Street</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Which_Product_Sent__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>On MQL Increment Score by 56</fullName>
+        <actions>
+            <name>Increment_Score_by_56</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.CC_Status__c</field>
+            <operation>equals</operation>
+            <value>mql</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Sent on date-Lead</fullName>
+        <actions>
+            <name>Lead_Sample_Sent_On_Date_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Waybill_No__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>What is the purpose modifications</fullName>
+        <actions>
+            <name>Update_Purpose_to_product_send</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.What_is_the_purpose_use__c</field>
+            <operation>equals</operation>
+            <value>Automotive repair &amp; maintenance,Personal Use or Home equipment Repair,Trading/Re-selling,Personal use,Others</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Plumbing_Lead__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Automotive repair &amp; maintenance, Personal Use or Home equipment Repair, Trading/Re-selling, Personal use, Others</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

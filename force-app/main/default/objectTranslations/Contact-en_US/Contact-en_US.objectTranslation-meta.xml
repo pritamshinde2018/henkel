@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Contacts</value>
+    </caseValues>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Call Center Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cart Payment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ecom Alternate Address 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ecom Alternate Address 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ecom Alternate Address 3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>GA Connector Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Indiamart Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>LinkedIn Company Page</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>LinkedIn Member Profile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Live Webinar Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>PDP Form (Customized Price Details)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>PDP Form (Refer Friend Details)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>PDP Form (Request CallBack Details)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referrals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Webinar - 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Webinar - 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Webinar - 3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Webinar - 4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Webinar - 5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Webinar Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Check_AEI_Flag</name>
+        <label>Check AEI Flag</label>
+        <locationX>821</locationX>
+        <locationY>367</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Flag_AEI_Customer__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Customer_AEI_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Fetch_RKA_GKA_Accounts.Customer_Tier_Type__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_weather_Customer_name_is_not_null</name>
+        <label>Check weather Customer name is not null</label>
+        <locationX>483</locationX>
+        <locationY>373</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer_Name_Not_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Fetch_RKA_GKA_Accounts.Customer_Name__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_AEI_Flag</targetReference>
+            </connector>
+            <label>Customer Name Not Empty</label>
+        </rules>
+    </decisions>
+    <interviewLabel>AEI Flag {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AEI Flag</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Fetch_RKA_GKA_Accounts</name>
+        <label>Fetch RKA &amp; GKA Accounts</label>
+        <locationX>194</locationX>
+        <locationY>357</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_weather_Customer_name_is_not_null</targetReference>
+        </connector>
+        <filters>
+            <field>Customer_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Name</elementReference>
+            </value>
+        </filters>
+        <object>RKA_GKA_AEI__c</object>
+    </recordLookups>
+    <startElementReference>Fetch_RKA_GKA_Accounts</startElementReference>
+    <status>Active</status>
+</Flow>

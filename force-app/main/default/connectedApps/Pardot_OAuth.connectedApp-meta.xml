@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>shreya.soni@nanostuffs.com</contactEmail>
+    <label>Pardot OAuth</label>
+    <oauthConfig>
+        <callbackUrl>https://henkel-tryloctite-in.my.salesforce.com/services/authcallback/Pardot</callbackUrl>
+        <consumerKey>3MVG9d8..z.hDcPL1YvMWWWFXj6fb8qe56QgBUWK6bZmGTZExQcq.Ok8I4Ehnrib9wVwniIDel4aCYJavUKc_</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>RefreshToken</scopes>
+        <scopes>Pardot</scopes>
+    </oauthConfig>
+</ConnectedApp>

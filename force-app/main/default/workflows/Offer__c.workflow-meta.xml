@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Send_Email_on_Offer_Creation</fullName>
+        <ccEmails>ajinkya.wankhede@nanostuffs.com</ccEmails>
+        <description>Send Email on Offer Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Step6_OrderDistributor</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Offer_Assign</fullName>
+        <field>OwnerId</field>
+        <lookupValue>agarwal.raashi@henkel.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Offer Assign</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_status_completed</fullName>
+        <field>Stauts__c</field>
+        <literalValue>Completed</literalValue>
+        <name>Update status completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Non Serviceable Offers Assigned to Rashi</fullName>
+        <actions>
+            <name>Offer_Assign</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Offer__c.Pincode_Status__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Email on offer creation</fullName>
+        <actions>
+            <name>Send_Email_on_Offer_Creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Offer__c.OwnerId</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Workflow on Status</fullName>
+        <actions>
+            <name>Update_status_completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Offer__c.Amount_Collected__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Offer__c.Amount_Collected_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Offer__c.Order_Delivered__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Offer__c.Order_Deliver_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

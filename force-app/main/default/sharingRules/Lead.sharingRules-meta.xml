@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Sharing_with_Vander</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Sharing with Vander</label>
+        <sharedTo>
+            <group>Vander_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Lead_share_with_cc_agents</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Lead share with cc agents</label>
+        <sharedTo>
+            <role>CC_Agents</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>CC_Agents</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

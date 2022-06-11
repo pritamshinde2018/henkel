@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Update_Ace_Distributor_Code</name>
+        <label>Update Ace Distributor Code</label>
+        <locationX>873</locationX>
+        <locationY>403</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Distributor_ace__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Ace_Distributor_Codes.Code__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_for_the_Distributor_on_Project_Code</name>
+        <label>Check for the Distributor on Project Code</label>
+        <locationX>517</locationX>
+        <locationY>406</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_Code</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Ace_Distributor_Codes.Code__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Ace_Distributor_Code</targetReference>
+            </connector>
+            <label>Check Code</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Update Ace Distributor Code on Project {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Ace Distributor Code on Project</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Ace_Distributor_Codes</name>
+        <label>Get Ace Distributor Codes</label>
+        <locationX>184</locationX>
+        <locationY>391</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_for_the_Distributor_on_Project_Code</targetReference>
+        </connector>
+        <filters>
+            <field>Distributor_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Distributor_On_Project__c</elementReference>
+            </value>
+        </filters>
+        <object>Ace_Distributor_Code__c</object>
+    </recordLookups>
+    <startElementReference>Get_Ace_Distributor_Codes</startElementReference>
+    <status>Active</status>
+</Flow>

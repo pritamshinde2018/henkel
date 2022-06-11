@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intends_to_speak_to_IST_at_a_later_date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(Intent_validation__c,&apos;Intends to speak to IST at a later date (date for speaking to IST)&apos;) ,ISBLANK( Intends_to_speak_to_IST_at_a_later_date__c ))</errorConditionFormula>
+    <errorDisplayField>Intends_to_speak_to_IST_at_a_later_date__c</errorDisplayField>
+    <errorMessage>Please Enter Date For Intends to speak to IST at a later date</errorMessage>
+</ValidationRule>

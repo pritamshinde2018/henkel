@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Value__c</fullName>
+    <externalId>false</externalId>
+    <formula>Quantity__c + May_18__c +  Jun018__c + Jul_18__c + Aug_18__c + Sep_18__c + Oct_18__c + Nov_18__c + Dec_18__c + Jan_19__c + Feb_19__c + Mar_19__c +  Apr_19__c  +  May_19__c  +  Jun_19__c +  Jul_19__c  +  Aug_19__c  +  Sep_19__c  +  Oct_19__c  +  Nov_19__c  +  Dec_19__c +  Jan_20__c + Feb_20__c + Mar_20__c + Apr_20__c + May_20__c +Jun_20__c+Jul_20__c + Aug_20__c + Sep_20__c + Oct_20__c + Nov_20__c + Dec_20__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

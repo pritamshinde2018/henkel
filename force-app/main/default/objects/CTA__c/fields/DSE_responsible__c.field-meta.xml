@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DSE_responsible__c</fullName>
+    <externalId>false</externalId>
+    <label>DSE responsible</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aditya  (Darbari Lal)</fullName>
+                <default>false</default>
+                <label>Aditya  (Darbari Lal)</label>
+            </value>
+            <value>
+                <fullName>Ajay Suthar (Innovative Engg)</fullName>
+                <default>false</default>
+                <label>Ajay Suthar (Innovative Engg)</label>
+            </value>
+            <value>
+                <fullName>Amrit Singh (Compac,Mohali)</fullName>
+                <default>false</default>
+                <label>Amrit Singh (Compac,Mohali)</label>
+            </value>
+            <value>
+                <fullName>Anadi (RELSOL)</fullName>
+                <default>false</default>
+                <label>Anadi (RELSOL)</label>
+            </value>
+            <value>
+                <fullName>Anand Lakhani  (Innovative Engineering - Rajkot )</fullName>
+                <default>false</default>
+                <label>Anand Lakhani  (Innovative Engineering - Rajkot )</label>
+            </value>
+            <value>
+                <fullName>Ankit Vyas (Shil Technologies-Baroda)</fullName>
+                <default>false</default>
+                <label>Ankit Vyas (Shil Technologies-Baroda)</label>
+            </value>
+            <value>
+                <fullName>Arindam Dutta (C M Corporation)</fullName>
+                <default>false</default>
+                <label>Arindam Dutta (C M Corporation)</label>
+            </value>
+            <value>
+                <fullName>Bastin Thomas (Aqua Engineering Services - Cochin)</fullName>
+                <default>false</default>
+                <label>Bastin Thomas (Aqua Engineering Services - Cochin)</label>
+            </value>
+            <value>
+                <fullName>David Yesaya (M P Brothers)</fullName>
+                <default>false</default>
+                <label>David Yesaya (M P Brothers)</label>
+            </value>
+            <value>
+                <fullName>Deepak (Namic Industrial Solutions)</fullName>
+                <default>false</default>
+                <label>Deepak (Namic Industrial Solutions)</label>
+            </value>
+            <value>
+                <fullName>Diwakar Yadav (Nikhil Shah &amp; Associates)</fullName>
+                <default>false</default>
+                <label>Diwakar Yadav (Nikhil Shah &amp; Associates)</label>
+            </value>
+            <value>
+                <fullName>Gautam Vora  (Shaildeep Enterprise)</fullName>
+                <default>false</default>
+                <label>Gautam Vora  (Shaildeep Enterprise)</label>
+            </value>
+            <value>
+                <fullName>Gopal Patel (Multiweld Engineering )</fullName>
+                <default>false</default>
+                <label>Gopal Patel (Multiweld Engineering )</label>
+            </value>
+            <value>
+                <fullName>Gourav Kale (Vison Industrial Hub)</fullName>
+                <default>false</default>
+                <label>Gourav Kale (Vison Industrial Hub)</label>
+            </value>
+            <value>
+                <fullName>Govind (Selwel Marketing)</fullName>
+                <default>false</default>
+                <label>Govind (Selwel Marketing)</label>
+            </value>
+            <value>
+                <fullName>Haridas Patil (Trade Syndicate)</fullName>
+                <default>false</default>
+                <label>Haridas Patil (Trade Syndicate)</label>
+            </value>
+            <value>
+                <fullName>Himanshu (Himanshu Enterprise)</fullName>
+                <default>false</default>
+                <label>Himanshu (Himanshu Enterprise)</label>
+            </value>
+            <value>
+                <fullName>Janmajay Kumar (Suman Enterprises)</fullName>
+                <default>false</default>
+                <label>Janmajay Kumar (Suman Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Jaydeep Goswami  (Innovative Engineering - Rajkot )</fullName>
+                <default>false</default>
+                <label>Jaydeep Goswami  (Innovative Engineering - Rajkot )</label>
+            </value>
+            <value>
+                <fullName>Jayesh Mandaliya (Innovative Engineering products pvt ltd)</fullName>
+                <default>false</default>
+                <label>Jayesh Mandaliya (Innovative Engineering products pvt ltd)</label>
+            </value>
+            <value>
+                <fullName>Jayesh Mandaliya (Innovative Engineering - Rajkot )</fullName>
+                <default>false</default>
+                <label>Jayesh Mandaliya (Innovative Engineering - Rajkot )</label>
+            </value>
+            <value>
+                <fullName>Junaid (A S Multi )</fullName>
+                <default>false</default>
+                <label>Junaid (A S Multi )</label>
+            </value>
+            <value>
+                <fullName>Kamal Panchal  (Sartech Solutions Pvt Ltd)</fullName>
+                <default>false</default>
+                <label>Kamal Panchal  (Sartech Solutions Pvt Ltd)</label>
+            </value>
+            <value>
+                <fullName>Kamlesh (Compac,Ludhiana)</fullName>
+                <default>false</default>
+                <label>Kamlesh (Compac,Ludhiana)</label>
+            </value>
+            <value>
+                <fullName>Kamlesh Srivastava (Compac Technologies)</fullName>
+                <default>false</default>
+                <label>Kamlesh Srivastava (Compac Technologies)</label>
+            </value>
+            <value>
+                <fullName>Krishna Nagle (Bhandari Technotrade)</fullName>
+                <default>false</default>
+                <label>Krishna Nagle (Bhandari Technotrade)</label>
+            </value>
+            <value>
+                <fullName>Kunal Desai (TESCO )</fullName>
+                <default>false</default>
+                <label>Kunal Desai (TESCO )</label>
+            </value>
+            <value>
+                <fullName>Logeswaran (Saroj Enterprises)</fullName>
+                <default>false</default>
+                <label>Logeswaran (Saroj Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Manish Kumar (QSRS)</fullName>
+                <default>false</default>
+                <label>Manish Kumar (QSRS)</label>
+            </value>
+            <value>
+                <fullName>Manish Madan (Sneh sales ( Bahadurgarh Haryana )</fullName>
+                <default>false</default>
+                <label>Manish Madan (Sneh sales ( Bahadurgarh Haryana )</label>
+            </value>
+            <value>
+                <fullName>Manoj A. (Prosol)</fullName>
+                <default>false</default>
+                <label>Manoj A. (Prosol)</label>
+            </value>
+            <value>
+                <fullName>Mayur Savsani (Innovative Engineering products pvt ltd)</fullName>
+                <default>false</default>
+                <label>Mayur Savsani (Innovative Engineering products pvt ltd)</label>
+            </value>
+            <value>
+                <fullName>Mehul Sonar (Innovative Engineering products pvt ltd)</fullName>
+                <default>false</default>
+                <label>Mehul Sonar (Innovative Engineering products pvt ltd)</label>
+            </value>
+            <value>
+                <fullName>Milind D (Dawn Enterprises)</fullName>
+                <default>false</default>
+                <label>Milind D (Dawn Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Mr.Malusare (Swaraj Corporation)</fullName>
+                <default>false</default>
+                <label>Mr.Malusare (Swaraj Corporation)</label>
+            </value>
+            <value>
+                <fullName>Mritunjay (Multiweld engineering)</fullName>
+                <default>false</default>
+                <label>Mritunjay (Multiweld engineering)</label>
+            </value>
+            <value>
+                <fullName>Muthuraj K (Sunchem)</fullName>
+                <default>false</default>
+                <label>Muthuraj K (Sunchem)</label>
+            </value>
+            <value>
+                <fullName>Namit Hajare (N H Associates)</fullName>
+                <default>false</default>
+                <label>Namit Hajare (N H Associates)</label>
+            </value>
+            <value>
+                <fullName>Nayan (Uni Sales India)</fullName>
+                <default>false</default>
+                <label>Nayan (Uni Sales India)</label>
+            </value>
+            <value>
+                <fullName>Pankaj Kr. Singh (Laxmi Metals)</fullName>
+                <default>false</default>
+                <label>Pankaj Kr. Singh (Laxmi Metals)</label>
+            </value>
+            <value>
+                <fullName>Parth Modi (Ethertech solutions)</fullName>
+                <default>false</default>
+                <label>Parth Modi (Ethertech solutions)</label>
+            </value>
+            <value>
+                <fullName>Pon Selvam (Prosol)</fullName>
+                <default>false</default>
+                <label>Pon Selvam (Prosol)</label>
+            </value>
+            <value>
+                <fullName>Pradeep Bhandari (Blackstone Disel)</fullName>
+                <default>false</default>
+                <label>Pradeep Bhandari (Blackstone Disel)</label>
+            </value>
+            <value>
+                <fullName>Prashant Bhosale (Industrial Agencies)</fullName>
+                <default>false</default>
+                <label>Prashant Bhosale (Industrial Agencies)</label>
+            </value>
+            <value>
+                <fullName>Prem Narang (PP Trading, Gwalior)</fullName>
+                <default>false</default>
+                <label>Prem Narang (PP Trading, Gwalior)</label>
+            </value>
+            <value>
+                <fullName>Priyank Laad (Vapi Techno)</fullName>
+                <default>false</default>
+                <label>Priyank Laad (Vapi Techno)</label>
+            </value>
+            <value>
+                <fullName>Rajat (R.A.S)</fullName>
+                <default>false</default>
+                <label>Rajat (R.A.S)</label>
+            </value>
+            <value>
+                <fullName>Rajkiran (Sre Marshal Enterprises)</fullName>
+                <default>false</default>
+                <label>Rajkiran (Sre Marshal Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Rakesh (MSR)  (Sadhuram &amp; Sons)</fullName>
+                <default>false</default>
+                <label>Rakesh (MSR)  (Sadhuram &amp; Sons)</label>
+            </value>
+            <value>
+                <fullName>Rakshit (Sellex Incorp)</fullName>
+                <default>false</default>
+                <label>Rakshit (Sellex Incorp)</label>
+            </value>
+            <value>
+                <fullName>Ramil Garg (Sartech Solutions Pvt Ltd)</fullName>
+                <default>false</default>
+                <label>Ramil Garg (Sartech Solutions Pvt Ltd)</label>
+            </value>
+            <value>
+                <fullName>Romil Shah (Tech Tools)</fullName>
+                <default>false</default>
+                <label>Romil Shah (Tech Tools)</label>
+            </value>
+            <value>
+                <fullName>Sadhick Vali (Srinivasa Enterprises)</fullName>
+                <default>false</default>
+                <label>Sadhick Vali (Srinivasa Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Sandeep Verma (Pradeep Enterprises)</fullName>
+                <default>false</default>
+                <label>Sandeep Verma (Pradeep Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Sanjay (Balbir singh &amp; brothers)</fullName>
+                <default>false</default>
+                <label>Sanjay (Balbir singh &amp; brothers)</label>
+            </value>
+            <value>
+                <fullName>Sanjay  (SAMIT SALES)</fullName>
+                <default>false</default>
+                <label>Sanjay  (SAMIT SALES)</label>
+            </value>
+            <value>
+                <fullName>Sanjay Raghvani (Pooja Agencies)</fullName>
+                <default>false</default>
+                <label>Sanjay Raghvani (Pooja Agencies)</label>
+            </value>
+            <value>
+                <fullName>Santosh (Industrial Solutions)</fullName>
+                <default>false</default>
+                <label>Santosh (Industrial Solutions)</label>
+            </value>
+            <value>
+                <fullName>Satish Chakram (Suman Enterprises)</fullName>
+                <default>false</default>
+                <label>Satish Chakram (Suman Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Shrenik Mehta (Nilesh Sales &amp; Agencies)</fullName>
+                <default>false</default>
+                <label>Shrenik Mehta (Nilesh Sales &amp; Agencies)</label>
+            </value>
+            <value>
+                <fullName>Somnath Kashid (Swaraj Corporation)</fullName>
+                <default>false</default>
+                <label>Somnath Kashid (Swaraj Corporation)</label>
+            </value>
+            <value>
+                <fullName>Subhash (Hitech Adhesives)</fullName>
+                <default>false</default>
+                <label>Subhash (Hitech Adhesives)</label>
+            </value>
+            <value>
+                <fullName>Sunil Kumar (S M Technosales)</fullName>
+                <default>false</default>
+                <label>Sunil Kumar (S M Technosales)</label>
+            </value>
+            <value>
+                <fullName>Swami (Devi Enterprises)</fullName>
+                <default>false</default>
+                <label>Swami (Devi Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Swapnil Fuse (Selwel Enterprises)</fullName>
+                <default>false</default>
+                <label>Swapnil Fuse (Selwel Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Taher (Elegant Enterprises)</fullName>
+                <default>false</default>
+                <label>Taher (Elegant Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Tushar Soni (Industrial Engineering Services)</fullName>
+                <default>false</default>
+                <label>Tushar Soni (Industrial Engineering Services)</label>
+            </value>
+            <value>
+                <fullName>Uday Rathod  (NMCC )</fullName>
+                <default>false</default>
+                <label>Uday Rathod  (NMCC )</label>
+            </value>
+            <value>
+                <fullName>Veldroy  (JAYKAY Enterprises)</fullName>
+                <default>false</default>
+                <label>Veldroy  (JAYKAY Enterprises)</label>
+            </value>
+            <value>
+                <fullName>Veldroy Fernandes (Jaykay Enterperises)</fullName>
+                <default>false</default>
+                <label>Veldroy Fernandes (Jaykay Enterperises)</label>
+            </value>
+            <value>
+                <fullName>Vijay Mehta (Pooja Agencies)</fullName>
+                <default>false</default>
+                <label>Vijay Mehta (Pooja Agencies)</label>
+            </value>
+            <value>
+                <fullName>Vipin Jain (Sarthak Sales)</fullName>
+                <default>false</default>
+                <label>Vipin Jain (Sarthak Sales)</label>
+            </value>
+            <value>
+                <fullName>Virender (RELSOL)</fullName>
+                <default>false</default>
+                <label>Virender (RELSOL)</label>
+            </value>
+            <value>
+                <fullName>Virender Kumar (Radiant Engineers)</fullName>
+                <default>false</default>
+                <label>Virender Kumar (Radiant Engineers)</label>
+            </value>
+            <value>
+                <fullName>G. Kanagaraj (CUTMAC MARKETING PVT LTD)</fullName>
+                <default>false</default>
+                <label>G. Kanagaraj (CUTMAC MARKETING PVT LTD)</label>
+            </value>
+            <value>
+                <fullName>K. Vinoth Kumar (FRV Associates)</fullName>
+                <default>false</default>
+                <label>K. Vinoth Kumar (FRV Associates)</label>
+            </value>
+            <value>
+                <fullName>Vimal Sukhanandi (Innovative – Ahmedabad)</fullName>
+                <default>false</default>
+                <label>Vimal Sukhanandi (Innovative – Ahmedabad)</label>
+            </value>
+            <value>
+                <fullName>Samkit Shah (Innovative – Rajkot)</fullName>
+                <default>false</default>
+                <label>Samkit Shah (Innovative – Rajkot)</label>
+            </value>
+            <value>
+                <fullName>Mukul (Rubber wing)</fullName>
+                <default>false</default>
+                <label>Mukul (Rubber wing)</label>
+            </value>
+            <value>
+                <fullName>Sheshkiran ( Sellex Incorp)</fullName>
+                <default>false</default>
+                <label>Sheshkiran ( Sellex Incorp)</label>
+            </value>
+            <value>
+                <fullName>Vikash Raz Chandan (Shri Mahaluxmi Chemicals)</fullName>
+                <default>false</default>
+                <label>Vikash Raz Chandan (Shri Mahaluxmi Chemicals)</label>
+            </value>
+            <value>
+                <fullName>Mansoor Lokhandwala (Everest Agencies)</fullName>
+                <default>false</default>
+                <label>Mansoor Lokhandwala (Everest Agencies)</label>
+            </value>
+            <value>
+                <fullName>Ravinder Giri (Sartech)</fullName>
+                <default>false</default>
+                <label>Ravinder Giri (Sartech)</label>
+            </value>
+            <value>
+                <fullName>Sujit Kumar (Multiweld)</fullName>
+                <default>false</default>
+                <label>Sujit Kumar (Multiweld)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

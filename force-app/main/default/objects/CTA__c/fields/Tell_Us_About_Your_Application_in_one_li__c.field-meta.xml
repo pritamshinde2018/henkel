@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tell_Us_About_Your_Application_in_one_li__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISBLANK(Customer_Contact__r.Tell_us_about_your_application_in_one_li__c)==False , Customer_Contact__r.Tell_us_about_your_application_in_one_li__c,Lead__r.Tell_us_about_your_application_in_one_li__c  )</formula>
+    <label>Tell Us About Your Application</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Delivery_Email_0_0</name>
+        <label>Delivery Email</label>
+        <locationX>490</locationX>
+        <locationY>408</locationY>
+        <actionName>CTA__c.Delivery_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Dispatch_Alert</name>
+        <label>Dispatch Alert</label>
+        <locationX>50</locationX>
+        <locationY>288</locationY>
+        <actionName>CTA__c.Dispatch_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>IST_Email_0_0</name>
+        <label>IST Email</label>
+        <locationX>930</locationX>
+        <locationY>408</locationY>
+        <actionName>CTA__c.IST_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Delivery_Date_Check</name>
+        <label>Delivery Date Check</label>
+        <locationX>402</locationX>
+        <locationY>288</locationY>
+        <defaultConnector>
+            <targetReference>Delivery_Email_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Delivery_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_of_Delivery__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Delivery Email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Delivery_Date_Check_0</name>
+        <label>Delivery Date Check</label>
+        <locationX>842</locationX>
+        <locationY>288</locationY>
+        <defaultConnector>
+            <targetReference>IST_Email_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Delivery_Email_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_of_Delivery__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Delivery Email</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Dispatch Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Dispatch Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Dispatch_Alert</startElementReference>
+    <status>Active</status>
+</Flow>

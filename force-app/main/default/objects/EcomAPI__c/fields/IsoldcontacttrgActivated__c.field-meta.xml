@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsoldcontacttrgActivated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>triggerName : trg_onContactBeforeUpdateAfterInsert</description>
+    <externalId>false</externalId>
+    <label>IsoldcontacttrgActivated</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

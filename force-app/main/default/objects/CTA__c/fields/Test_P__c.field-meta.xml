@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_P__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Lead__r.Test__c ==True, True, IF( Customer_Contact__r.Test__c == True, True, False)  )</formula>
+    <label>Test P</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

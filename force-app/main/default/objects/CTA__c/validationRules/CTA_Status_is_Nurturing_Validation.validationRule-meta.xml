@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CTA_Status_is_Nurturing_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( CTA_stage__c , &apos;Nurturing&apos;) &amp;&amp;    ISBLANK(TEXT( Reasons_for_nurturing__c )  ) = True</errorConditionFormula>
+    <errorMessage>Please add Reason for Nurturing value</errorMessage>
+</ValidationRule>

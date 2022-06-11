@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eCommerce_qualification_Validation</fullName>
+    <active>true</active>
+    <description>Ecommerce Qualification is Need Follow Up then Follow up action and Follow up date required</description>
+    <errorConditionFormula>(  ISBLANK(Follow_up_due_date__c)=TRUE    ||   ISBLANK( TEXT(Follow_up_action__c)) = TRUE   ) &amp;&amp;  TEXT( Ecoomerce_Qualification__c )== &apos;Need follow-up&apos;</errorConditionFormula>
+    <errorDisplayField>Application__c</errorDisplayField>
+    <errorMessage>Please fill Follow up action and Follow up date to change Ecommerce Qualification to Need Follow up.</errorMessage>
+</ValidationRule>

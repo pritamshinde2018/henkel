@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Mail_to_Mahima_for_Case_to_be_worked_on</fullName>
+        <ccEmails>suvarna.mohite@henkel.com</ccEmails>
+        <description>Mail to Mahima for Case to be worked on</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>preeti.malik@henkel.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Send_Notification_to_Mahima</template>
+    </alerts>
+    <alerts>
+        <fullName>Mail_to_Suvarna_for_Case_to_be_worked_on</fullName>
+        <ccEmails>suvarna.mohite@henkel.com</ccEmails>
+        <ccEmails>ajinkya.wankhede@nanostuffs.com</ccEmails>
+        <description>Mail to Suvarna for Case to be worked on</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>varun.sahay@henkel.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Send_Notification_to_Suvarna</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Contact_Related_to_Case</fullName>
+        <description>Send Email to Contact Related to Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>customer.enquiries@henkel.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Email_Templetes/Autoresponder_Mail_For_Email_To_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>notify_try_loctite</fullName>
+        <ccEmails>marketing.ag@henkel.com</ccEmails>
+        <ccEmails>vinay.ravindranath@henkel.com</ccEmails>
+        <description>notify try loctite</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>varun.sahay@henkel.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/New_Case_Created</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Case_Origin</fullName>
+        <field>Origin</field>
+        <literalValue>PayU-Failed Payment</literalValue>
+        <name>Case Origin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Priority_as_High_For_PayU</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Case Priority as High For PayU</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>First_Response_Time</fullName>
+        <field>First_Response__c</field>
+        <formula>Now()</formula>
+        <name>First Response Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OriginToHotjar</fullName>
+        <field>Origin</field>
+        <literalValue>Hotjar</literalValue>
+        <name>OriginToHotjar</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Status_to_Closed</fullName>
+        <description>Close these cases</description>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+        <name>Update Case Status to Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>assign_to_try_loctite</fullName>
+        <field>OwnerId</field>
+        <lookupValue>varun.sahay@henkel.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>assign to try loctite</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case Created Using PayU</fullName>
+        <actions>
+            <name>Case_Origin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Priority_as_High_For_PayU</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>equals</operation>
+            <value>payment-report@payu.in</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Close notifications%40tryloctite%2Ein and seller%40tryloctite%2Ein cases</fullName>
+        <actions>
+            <name>Update_Case_Status_to_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>equals</operation>
+            <value>seller@tryloctite.in</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>equals</operation>
+            <value>notifications@tryloctite.in</value>
+        </criteriaItems>
+        <description>Close cases coming from emails  notifications@tryloctite.in and seller@tryloctite.in</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email to Case Autoresponder Thank you Email</fullName>
+        <actions>
+            <name>Send_Email_to_Contact_Related_to_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Email</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Non-Reply Date%2FTime for First Response</fullName>
+        <actions>
+            <name>First_Response_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Non_Reply_Case__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.First_Response__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>To capture first reraspose when no email reply tp customer is required</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify On New Case Creation</fullName>
+        <actions>
+            <name>notify_try_loctite</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>assign_to_try_loctite</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.CaseNumber</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdateOriginToHotjar</fullName>
+        <actions>
+            <name>OriginToHotjar</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>contains</operation>
+            <value>@hotjar.com</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Servicing_these_industrial_hubs__c</fullName>
+    <description>Research inputs – traders</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Research inputs – traders</inlineHelpText>
+    <label>Servicing these industrial hubs</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
